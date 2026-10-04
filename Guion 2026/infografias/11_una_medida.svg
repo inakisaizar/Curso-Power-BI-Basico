@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Una medida, muchas preguntas</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">La escribes una vez. Las dimensiones deciden cómo se corta.</text>
+
+  <rect x="560" y="395" width="480" height="110" rx="16" fill="#F5F3FF" stroke="#7B61FF" stroke-width="3"/>
+  <text x="800" y="438" font-size="20" font-weight="700" fill="#5B21B6" text-anchor="middle">MEDIDA</text>
+  <text x="800" y="478" font-size="22" fill="#1F2937" text-anchor="middle" font-family="Consolas, Courier New, monospace">Ventas = SUM(FactVentas[Importe])</text>
+
+  <g stroke="#C4B5FD" stroke-width="3">
+    <line x1="560" y1="420" x2="520" y2="330"/><line x1="1040" y1="420" x2="1080" y2="330"/>
+    <line x1="560" y1="480" x2="520" y2="570"/><line x1="1040" y1="480" x2="1080" y2="570"/>
+  </g>
+
+  <g font-size="18" fill="#1F2937">
+    <rect x="60" y="160" width="460" height="300" rx="12" fill="#FFFFFF" stroke="#E8743B" stroke-width="2"/>
+    <text x="84" y="198" font-size="20" font-weight="700" fill="#C2410C">¿Qué familias venden más?</text>
+    <text x="84" y="224" font-size="15" fill="#6B7280">DimProducto[Familia]</text>
+    <rect x="84" y="250" width="380" height="28" rx="4" fill="#E8743B"/>
+    <rect x="84" y="292" width="340" height="28" rx="4" fill="#E8743B" opacity="0.85"/>
+    <rect x="84" y="334" width="210" height="28" rx="4" fill="#E8743B" opacity="0.7"/>
+    <rect x="84" y="376" width="160" height="28" rx="4" fill="#E8743B" opacity="0.55"/>
+    <rect x="84" y="418" width="120" height="28" rx="4" fill="#E8743B" opacity="0.4"/>
+
+    <rect x="1080" y="160" width="460" height="300" rx="12" fill="#FFFFFF" stroke="#E8743B" stroke-width="2"/>
+    <text x="1104" y="198" font-size="20" font-weight="700" fill="#C2410C">¿Dónde vendemos?</text>
+    <text x="1104" y="224" font-size="15" fill="#6B7280">DimCliente[Provincia]</text>
+    <rect x="1104" y="250" width="400" height="40" rx="4" fill="#F3F4F6"/><text x="1118" y="277">Bizkaia</text><rect x="1340" y="259" width="150" height="22" rx="3" fill="#E8743B"/>
+    <rect x="1104" y="298" width="400" height="40" rx="4" fill="#FFFFFF"/><text x="1118" y="325">Gipuzkoa</text><rect x="1400" y="307" width="90" height="22" rx="3" fill="#E8743B"/>
+    <rect x="1104" y="346" width="400" height="40" rx="4" fill="#F3F4F6"/><text x="1118" y="373">Araba</text><rect x="1430" y="355" width="60" height="22" rx="3" fill="#E8743B"/>
+    <rect x="1104" y="394" width="400" height="40" rx="4" fill="#FFFFFF"/><text x="1118" y="421">Cantabria</text><rect x="1460" y="403" width="30" height="22" rx="3" fill="#E8743B"/>
+
+    <rect x="60" y="570" width="460" height="290" rx="12" fill="#FFFFFF" stroke="#E8743B" stroke-width="2"/>
+    <text x="84" y="608" font-size="20" font-weight="700" fill="#C2410C">¿Qué ruta rinde más?</text>
+    <text x="84" y="634" font-size="15" fill="#6B7280">DimRuta[Ruta]</text>
+    <g fill="#E8743B">
+      <rect x="104" y="700" width="50" height="140"/><rect x="174" y="740" width="50" height="100" opacity="0.85"/><rect x="244" y="760" width="50" height="80" opacity="0.7"/><rect x="314" y="770" width="50" height="70" opacity="0.6"/><rect x="384" y="790" width="50" height="50" opacity="0.5"/>
+    </g>
+    <line x1="90" y1="840" x2="490" y2="840" stroke="#9CA3AF" stroke-width="2"/>
+
+    <rect x="1080" y="570" width="460" height="290" rx="12" fill="#FFFFFF" stroke="#E8743B" stroke-width="2"/>
+    <text x="1104" y="608" font-size="20" font-weight="700" fill="#C2410C">¿Cómo evoluciona?</text>
+    <text x="1104" y="634" font-size="15" fill="#6B7280">DimFecha[Mes nombre]</text>
+    <polyline points="1110,800 1160,770 1210,785 1260,730 1310,750 1360,700 1410,720 1460,680 1500,690" fill="none" stroke="#E8743B" stroke-width="4"/>
+    <line x1="1104" y1="840" x2="1510" y2="840" stroke="#9CA3AF" stroke-width="2"/>
+  </g>
+
+  <rect x="560" y="600" width="480" height="200" rx="14" fill="#FEF3C7"/>
+  <text x="800" y="648" font-size="22" font-weight="700" fill="#1F2937" text-anchor="middle">Cuatro preguntas,</text>
+  <text x="800" y="680" font-size="22" font-weight="700" fill="#1F2937" text-anchor="middle">una sola medida</text>
+  <text x="800" y="724" font-size="18" fill="#1F2937" text-anchor="middle">Cada atributo de cada dimensión</text>
+  <text x="800" y="750" font-size="18" fill="#1F2937" text-anchor="middle">es una pregunta más que el modelo</text>
+  <text x="800" y="776" font-size="18" fill="#1F2937" text-anchor="middle">responde sin escribir nada nuevo.</text>
+</svg>

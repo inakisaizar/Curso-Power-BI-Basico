@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#E8743B"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Relación uno a varios</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Un cliente, muchas ventas. El filtro cae de la dimensión a los hechos.</text>
+
+  <rect x="60" y="180" width="520" height="380" rx="12" fill="#FFF7ED" stroke="#E8743B" stroke-width="2.5"/>
+  <text x="84" y="222" font-size="26" font-weight="700" fill="#C2410C">DimCliente</text>
+  <text x="84" y="250" font-size="17" fill="#4B5563">Dimensión: una fila por cliente</text>
+  <rect x="84" y="270" width="472" height="40" fill="#FDE3CF"/>
+  <g font-size="18" font-weight="700" fill="#1F2937"><text x="100" y="297">IdCliente</text><text x="250" y="297">Cliente</text><text x="420" y="297">Provincia</text></g>
+  <g font-size="18" fill="#1F2937">
+    <rect x="84" y="314" width="472" height="40" fill="#FEF3C7"/>
+    <text x="100" y="341" font-weight="700">208</text><text x="250" y="341">Bar Txoko</text><text x="420" y="341">Bizkaia</text>
+    <text x="100" y="385">215</text><text x="250" y="385">Asador Ibai</text><text x="420" y="385">Gipuzkoa</text>
+    <text x="100" y="429">231</text><text x="250" y="429">Hotel Mendi</text><text x="420" y="429">Bizkaia</text>
+  </g>
+  <g stroke="#F3D3BC"><line x1="84" y1="358" x2="556" y2="358"/><line x1="84" y1="402" x2="556" y2="402"/><line x1="84" y1="446" x2="556" y2="446"/></g>
+  <text x="84" y="492" font-size="18" fill="#1F2937"><tspan font-weight="700">Clave principal:</tspan> cada IdCliente</text>
+  <text x="84" y="518" font-size="18" fill="#1F2937">aparece una sola vez.</text>
+
+  <rect x="1020" y="180" width="520" height="520" rx="12" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2.5"/>
+  <text x="1044" y="222" font-size="26" font-weight="700" fill="#0E7C7B">FactVentas</text>
+  <text x="1044" y="250" font-size="17" fill="#4B5563">Hechos: una fila por línea de venta</text>
+  <rect x="1044" y="270" width="472" height="40" fill="#CCE7E6"/>
+  <g font-size="18" font-weight="700" fill="#1F2937"><text x="1060" y="297">Fecha</text><text x="1210" y="297">IdCliente</text><text x="1380" y="297">Importe</text></g>
+  <g font-size="18" fill="#1F2937">
+    <rect x="1044" y="314" width="472" height="40" fill="#FEF3C7"/>
+    <text x="1060" y="341">03/02/2025</text><text x="1210" y="341" font-weight="700">208</text><text x="1380" y="341">120,00</text>
+    <text x="1060" y="385">03/02/2025</text><text x="1210" y="385">215</text><text x="1380" y="385">86,40</text>
+    <rect x="1044" y="402" width="472" height="40" fill="#FEF3C7"/>
+    <text x="1060" y="429">10/02/2025</text><text x="1210" y="429" font-weight="700">208</text><text x="1380" y="429">54,90</text>
+    <text x="1060" y="473">11/02/2025</text><text x="1210" y="473">231</text><text x="1380" y="473">210,00</text>
+    <rect x="1044" y="490" width="472" height="40" fill="#FEF3C7"/>
+    <text x="1060" y="517">17/02/2025</text><text x="1210" y="517" font-weight="700">208</text><text x="1380" y="517">33,60</text>
+    <text x="1060" y="561">...</text><text x="1210" y="561">...</text><text x="1380" y="561">...</text>
+  </g>
+  <text x="1044" y="616" font-size="18" fill="#1F2937"><tspan font-weight="700">Clave externa:</tspan> el mismo IdCliente</text>
+  <text x="1044" y="642" font-size="18" fill="#1F2937">se repite en cada venta del cliente.</text>
+
+  <line x1="580" y1="334" x2="1020" y2="334" stroke="#6B7280" stroke-width="3"/>
+  <circle cx="610" cy="334" r="22" fill="#FFFFFF" stroke="#6B7280" stroke-width="2"/>
+  <text x="610" y="342" font-size="24" font-weight="700" fill="#1F2937" text-anchor="middle">1</text>
+  <circle cx="990" cy="334" r="22" fill="#FFFFFF" stroke="#6B7280" stroke-width="2"/>
+  <text x="990" y="346" font-size="30" font-weight="700" fill="#1F2937" text-anchor="middle">*</text>
+  <path d="M780,322 L812,334 L780,346 z" fill="#6B7280"/>
+
+  <rect x="640" y="400" width="340" height="150" rx="14" fill="#FFF7ED" stroke="#E8743B" stroke-width="2"/>
+  <text x="810" y="440" font-size="20" font-weight="700" fill="#C2410C" text-anchor="middle">Eliges «Bar Txoko»</text>
+  <line x1="700" y1="470" x2="920" y2="470" stroke="#E8743B" stroke-width="4" marker-end="url(#fl)"/>
+  <text x="810" y="510" font-size="18" fill="#1F2937" text-anchor="middle">el filtro viaja por la relación</text>
+  <text x="810" y="536" font-size="18" fill="#1F2937" text-anchor="middle">y deja solo sus ventas</text>
+
+  <rect x="60" y="740" width="1480" height="110" rx="12" fill="#FEF3C7"/>
+  <text x="84" y="782" font-size="22" font-weight="700" fill="#1F2937">Ventas de Bar Txoko = 120,00 + 54,90 + 33,60 + ...</text>
+  <text x="84" y="822" font-size="20" fill="#1F2937">La medida no sabe nada de clientes: suma lo que el filtro deja en FactVentas.</text>
+</svg>
