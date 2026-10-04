@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F2937"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Combinar frente a anexar</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Dos formas de unir tablas: en horizontal (más columnas) o en vertical (más filas).</text>
+
+  <rect x="60" y="160" width="720" height="640" rx="16" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2.5"/>
+  <text x="90" y="210" font-size="30" font-weight="700" fill="#0E7C7B">Combinar consultas</text>
+  <text x="90" y="244" font-size="20" fill="#374151">Añade columnas de otra tabla, buscando por una clave</text>
+
+  <text x="90" y="292" font-size="17" font-weight="700" fill="#4B5563">VENTAS</text>
+  <g font-size="17" fill="#1F2937">
+    <rect x="90" y="302" width="110" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="100" y="326" font-weight="700">Fecha</text>
+    <rect x="200" y="302" width="100" height="36" fill="#CCE7E6" stroke="#0E7C7B" stroke-width="2"/><text x="210" y="326" font-weight="700">IdCliente</text>
+    <rect x="300" y="302" width="90" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="310" y="326" font-weight="700">Importe</text>
+    <rect x="90" y="338" width="110" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="100" y="361">10/01</text>
+    <rect x="200" y="338" width="100" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="210" y="361">1002</text>
+    <rect x="300" y="338" width="90" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="310" y="361">2.398</text>
+    <rect x="90" y="372" width="110" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="100" y="395">04/01</text>
+    <rect x="200" y="372" width="100" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="210" y="395">1003</text>
+    <rect x="300" y="372" width="90" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="310" y="395">2.390</text>
+  </g>
+
+  <text x="470" y="292" font-size="17" font-weight="700" fill="#4B5563">CLIENTES</text>
+  <g font-size="17" fill="#1F2937">
+    <rect x="470" y="302" width="100" height="36" fill="#CCE7E6" stroke="#0E7C7B" stroke-width="2"/><text x="480" y="326" font-weight="700">IdCliente</text>
+    <rect x="570" y="302" width="180" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="580" y="326" font-weight="700">NombreCliente</text>
+    <rect x="470" y="338" width="100" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="480" y="361">1002</text>
+    <rect x="570" y="338" width="180" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="580" y="361">Tornería Iruña</text>
+    <rect x="470" y="372" width="100" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="480" y="395">1003</text>
+    <rect x="570" y="372" width="180" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="580" y="395">Ind. Arrieta</text>
+  </g>
+  <path d="M300,320 C360,270 420,270 466,316" fill="none" stroke="#0E7C7B" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <text x="383" y="268" font-size="15" text-anchor="middle" fill="#0E7C7B" font-weight="700">misma clave</text>
+
+  <line x1="420" y1="424" x2="420" y2="470" stroke="#1F2937" stroke-width="3" marker-end="url(#arr)"/>
+
+  <g font-size="17" fill="#1F2937">
+    <rect x="160" y="484" width="110" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="170" y="508" font-weight="700">Fecha</text>
+    <rect x="270" y="484" width="100" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="280" y="508" font-weight="700">IdCliente</text>
+    <rect x="370" y="484" width="90" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="380" y="508" font-weight="700">Importe</text>
+    <rect x="460" y="484" width="180" height="36" fill="#0E7C7B" stroke="#0E7C7B"/><text x="470" y="508" font-weight="700" fill="#FFFFFF">NombreCliente</text>
+    <rect x="160" y="520" width="110" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="170" y="543">10/01</text>
+    <rect x="270" y="520" width="100" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="280" y="543">1002</text>
+    <rect x="370" y="520" width="90" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="380" y="543">2.398</text>
+    <rect x="460" y="520" width="180" height="34" fill="#E6F4F3" stroke="#0E7C7B"/><text x="470" y="543">Tornería Iruña</text>
+    <rect x="160" y="554" width="110" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="170" y="577">04/01</text>
+    <rect x="270" y="554" width="100" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="280" y="577">1003</text>
+    <rect x="370" y="554" width="90" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="380" y="577">2.390</text>
+    <rect x="460" y="554" width="180" height="34" fill="#E6F4F3" stroke="#0E7C7B"/><text x="470" y="577">Ind. Arrieta</text>
+  </g>
+
+  <g font-size="19" fill="#1F2937">
+    <text x="90" y="640" font-weight="700">Más columnas, mismas filas.</text>
+    <text x="90" y="672">Necesita una columna clave común (IdCliente).</text>
+    <text x="90" y="704">Tipo habitual: Externa izquierda.</text>
+    <text x="90" y="736">Si no encuentra la clave, deja la celda vacía (null):</text>
+    <text x="90" y="764" font-weight="700" fill="#0E7C7B">así detectas datos que no cuadran.</text>
+  </g>
+
+  <rect x="820" y="160" width="720" height="640" rx="16" fill="#F5F3FF" stroke="#7B61FF" stroke-width="2.5"/>
+  <text x="850" y="210" font-size="30" font-weight="700" fill="#5B21B6">Anexar consultas</text>
+  <text x="850" y="244" font-size="20" fill="#374151">Pone las filas de una tabla debajo de las de otra</text>
+
+  <g font-size="17" fill="#1F2937">
+    <text x="850" y="292" font-size="17" font-weight="700" fill="#4B5563">VENTAS 2024</text>
+    <rect x="850" y="302" width="110" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="860" y="326" font-weight="700">Fecha</text>
+    <rect x="960" y="302" width="100" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="970" y="326" font-weight="700">IdCliente</text>
+    <rect x="1060" y="302" width="90" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="1070" y="326" font-weight="700">Importe</text>
+    <rect x="850" y="338" width="300" height="34" fill="#EDE9FE" stroke="#C4B5FD"/><text x="860" y="361">filas de 2024</text>
+    <rect x="850" y="372" width="300" height="34" fill="#EDE9FE" stroke="#C4B5FD"/><text x="860" y="395">...</text>
+
+    <text x="850" y="452" font-size="17" font-weight="700" fill="#4B5563">VENTAS 2025</text>
+    <rect x="850" y="462" width="110" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="860" y="486" font-weight="700">Fecha</text>
+    <rect x="960" y="462" width="100" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="970" y="486" font-weight="700">IdCliente</text>
+    <rect x="1060" y="462" width="90" height="36" fill="#E5E7EB" stroke="#9CA3AF"/><text x="1070" y="486" font-weight="700">Importe</text>
+    <rect x="850" y="498" width="300" height="34" fill="#FEF3C7" stroke="#FCD34D"/><text x="860" y="521">filas de 2025</text>
+    <rect x="850" y="532" width="300" height="34" fill="#FEF3C7" stroke="#FCD34D"/><text x="860" y="555">...</text>
+  </g>
+
+  <line x1="1166" y1="434" x2="1228" y2="434" stroke="#1F2937" stroke-width="3" marker-end="url(#arr)"/>
+
+  <g font-size="17" fill="#1F2937">
+    <text x="1240" y="292" font-size="17" font-weight="700" fill="#4B5563">VENTAS HISTÓRICO</text>
+    <rect x="1240" y="302" width="96" height="36" fill="#7B61FF" stroke="#FFFFFF"/><text x="1250" y="326" font-weight="700" fill="#FFF">Fecha</text>
+    <rect x="1336" y="302" width="100" height="36" fill="#7B61FF" stroke="#FFFFFF"/><text x="1346" y="326" font-weight="700" fill="#FFF">IdCliente</text>
+    <rect x="1436" y="302" width="90" height="36" fill="#7B61FF" stroke="#FFFFFF"/><text x="1446" y="326" font-weight="700" fill="#FFF">Importe</text>
+    <rect x="1240" y="338" width="286" height="34" fill="#EDE9FE" stroke="#C4B5FD"/><text x="1250" y="361">filas de 2024</text>
+    <rect x="1240" y="372" width="286" height="34" fill="#EDE9FE" stroke="#C4B5FD"/><text x="1250" y="395">...</text>
+    <rect x="1240" y="406" width="286" height="34" fill="#FEF3C7" stroke="#FCD34D"/><text x="1250" y="429">filas de 2025</text>
+    <rect x="1240" y="440" width="286" height="34" fill="#FEF3C7" stroke="#FCD34D"/><text x="1250" y="463">...</text>
+  </g>
+
+  <g font-size="19" fill="#1F2937">
+    <text x="850" y="640" font-weight="700">Más filas, mismas columnas.</text>
+    <text x="850" y="672">Las columnas se emparejan por su nombre.</text>
+    <text x="850" y="704">Si se llaman distinto, salen duplicadas y medio vacías:</text>
+    <text x="850" y="736" font-weight="700" fill="#5B21B6">renombra antes de anexar.</text>
+  </g>
+
+  <rect x="60" y="822" width="1480" height="56" rx="10" fill="#FEF3C7"/>
+  <text x="84" y="858" font-size="20" fill="#1F2937"><tspan font-weight="700">Para recordarlo:</tspan> combinar es un BUSCARV (VLOOKUP) para toda la tabla; anexar es copiar y pegar una tabla debajo de otra.</text>
+</svg>

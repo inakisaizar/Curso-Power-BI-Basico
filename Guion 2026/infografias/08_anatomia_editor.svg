@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Anatomía del Editor de Power Query</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Seis zonas. Cada una tiene una función.</text>
+
+  <rect x="60" y="150" width="1100" height="690" rx="12" fill="#F9FAFB" stroke="#9CA3AF" stroke-width="2"/>
+  <rect x="60" y="150" width="1100" height="34" rx="12" fill="#0E7C7B"/>
+  <rect x="60" y="170" width="1100" height="14" fill="#0E7C7B"/>
+  <text x="80" y="174" font-size="16" font-weight="700" fill="#FFFFFF">Editor de Power Query</text>
+
+  <rect x="76" y="196" width="1068" height="86" rx="6" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="2.5"/>
+  <g font-size="17" font-weight="700" fill="#1F2937"><text x="96" y="224">Inicio</text><text x="176" y="224">Transformación</text><text x="330" y="224">Agregar columna</text><text x="492" y="224">Ver</text><text x="542" y="224">Ayuda</text></g>
+  <g fill="#E5F3F2">
+    <rect x="96" y="240" width="70" height="30" rx="4"/><rect x="176" y="240" width="70" height="30" rx="4"/><rect x="256" y="240" width="70" height="30" rx="4"/><rect x="336" y="240" width="70" height="30" rx="4"/><rect x="416" y="240" width="70" height="30" rx="4"/><rect x="496" y="240" width="70" height="30" rx="4"/><rect x="576" y="240" width="70" height="30" rx="4"/>
+  </g>
+
+  <rect x="76" y="296" width="210" height="474" rx="6" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="2.5"/>
+  <text x="96" y="326" font-size="17" font-weight="700" fill="#1F2937">Consultas [4]</text>
+  <g font-size="15" fill="#1F2937">
+    <rect x="90" y="342" width="182" height="28" rx="4" fill="#CCE7E6"/><text x="100" y="361">FactVentas</text>
+    <text x="100" y="393">DimCliente</text>
+    <text x="100" y="421">DimProducto</text>
+    <text x="100" y="449">DimRuta</text>
+  </g>
+
+  <rect x="300" y="296" width="608" height="44" rx="6" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="2.5"/>
+  <text x="316" y="324" font-size="15" fill="#374151" font-family="Consolas, Courier New, monospace">fx  = Table.SelectRows(#"Tipo cambiado", each ...)</text>
+
+  <rect x="300" y="352" width="608" height="418" rx="6" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="2.5"/>
+  <g fill="#F3F4F6"><rect x="300" y="352" width="608" height="34"/></g>
+  <g font-size="14" fill="#1F2937" font-weight="700"><text x="316" y="374">Fecha</text><text x="456" y="374">IdCliente</text><text x="606" y="374">Importe</text><text x="756" y="374">Coste</text></g>
+  <g fill="#10B981"><rect x="316" y="390" width="120" height="5"/><rect x="456" y="390" width="120" height="5"/><rect x="606" y="390" width="100" height="5"/><rect x="756" y="390" width="120" height="5"/></g>
+  <rect x="706" y="390" width="20" height="5" fill="#EF4444"/>
+  <g stroke="#E5E7EB" stroke-width="1.5">
+    <line x1="300" y1="420" x2="908" y2="420"/><line x1="300" y1="452" x2="908" y2="452"/><line x1="300" y1="484" x2="908" y2="484"/><line x1="300" y1="516" x2="908" y2="516"/><line x1="300" y1="548" x2="908" y2="548"/>
+  </g>
+
+  <rect x="922" y="296" width="222" height="474" rx="6" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="2.5"/>
+  <text x="936" y="324" font-size="16" font-weight="700" fill="#1F2937">PROPIEDADES</text>
+  <text x="936" y="350" font-size="14" fill="#6B7280">Nombre</text>
+  <rect x="936" y="358" width="194" height="28" rx="4" fill="#F3F4F6"/><text x="944" y="377" font-size="14" fill="#1F2937">FactVentas</text>
+  <text x="936" y="420" font-size="16" font-weight="700" fill="#1F2937">PASOS APLICADOS</text>
+  <g font-size="14" fill="#1F2937">
+    <text x="944" y="448">Origen</text>
+    <text x="944" y="474">Navegación</text>
+    <text x="944" y="500">Tipo cambiado</text>
+    <rect x="936" y="510" width="194" height="26" rx="4" fill="#CCE7E6"/><text x="944" y="528">Filas filtradas</text>
+    <text x="944" y="556">Columnas quitadas</text>
+  </g>
+
+  <rect x="76" y="784" width="1068" height="40" rx="6" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="2.5"/>
+  <text x="96" y="810" font-size="15" fill="#374151">4 COLUMNAS, 999+ FILAS  ·  Generación de perfiles de columna basada en las 1000 primeras filas</text>
+
+  <g font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    <circle cx="1130" cy="210" r="18" fill="#E8743B"/><text x="1130" y="217">1</text>
+    <circle cx="272" cy="310" r="18" fill="#E8743B"/><text x="272" y="317">2</text>
+    <circle cx="894" cy="310" r="18" fill="#E8743B"/><text x="894" y="317">3</text>
+    <circle cx="894" cy="756" r="18" fill="#E8743B"/><text x="894" y="763">4</text>
+    <circle cx="1130" cy="756" r="18" fill="#E8743B"/><text x="1130" y="763">5</text>
+    <circle cx="1130" cy="804" r="18" fill="#E8743B"/><text x="1130" y="811">6</text>
+  </g>
+
+  <g font-size="18" fill="#1F2937">
+    <circle cx="1210" cy="186" r="15" fill="#E8743B"/><text x="1210" y="192" text-anchor="middle" fill="#FFF" font-weight="700" font-size="16">1</text>
+    <text x="1236" y="182" font-weight="700">Cinta de opciones</text>
+    <text x="1236" y="206" font-size="16" fill="#4B5563">Todas las transformaciones,</text>
+    <text x="1236" y="226" font-size="16" fill="#4B5563">por pestañas</text>
+
+    <circle cx="1210" cy="286" r="15" fill="#E8743B"/><text x="1210" y="292" text-anchor="middle" fill="#FFF" font-weight="700" font-size="16">2</text>
+    <text x="1236" y="282" font-weight="700">Consultas</text>
+    <text x="1236" y="306" font-size="16" fill="#4B5563">Una por tabla. Clic derecho</text>
+    <text x="1236" y="326" font-size="16" fill="#4B5563">para renombrar, agrupar, cargar</text>
+
+    <circle cx="1210" cy="386" r="15" fill="#E8743B"/><text x="1210" y="392" text-anchor="middle" fill="#FFF" font-weight="700" font-size="16">3</text>
+    <text x="1236" y="382" font-weight="700">Barra de fórmulas</text>
+    <text x="1236" y="406" font-size="16" fill="#4B5563">El código M del paso</text>
+    <text x="1236" y="426" font-size="16" fill="#4B5563">seleccionado</text>
+
+    <circle cx="1210" cy="486" r="15" fill="#E8743B"/><text x="1210" y="492" text-anchor="middle" fill="#FFF" font-weight="700" font-size="16">4</text>
+    <text x="1236" y="482" font-weight="700">Vista previa</text>
+    <text x="1236" y="506" font-size="16" fill="#4B5563">La tabla en ese paso, con la</text>
+    <text x="1236" y="526" font-size="16" fill="#4B5563">calidad de cada columna</text>
+
+    <circle cx="1210" cy="586" r="15" fill="#E8743B"/><text x="1210" y="592" text-anchor="middle" fill="#FFF" font-weight="700" font-size="16">5</text>
+    <text x="1236" y="582" font-weight="700">Configuración</text>
+    <text x="1236" y="606" font-size="16" fill="#4B5563">Nombre y pasos aplicados,</text>
+    <text x="1236" y="626" font-size="16" fill="#4B5563">en orden</text>
+
+    <circle cx="1210" cy="686" r="15" fill="#E8743B"/><text x="1210" y="692" text-anchor="middle" fill="#FFF" font-weight="700" font-size="16">6</text>
+    <text x="1236" y="682" font-weight="700">Barra de estado</text>
+    <text x="1236" y="706" font-size="16" fill="#4B5563">Filas y columnas, y sobre cuántas</text>
+    <text x="1236" y="726" font-size="16" fill="#4B5563">filas se calcula el perfil</text>
+  </g>
+
+  <rect x="1190" y="770" width="350" height="70" rx="10" fill="#FEF3C7"/>
+  <text x="1206" y="800" font-size="16" fill="#1F2937" font-weight="700">Haz clic en un paso aplicado:</text>
+  <text x="1206" y="824" font-size="16" fill="#1F2937">la vista previa vuelve a ese momento.</text>
+</svg>

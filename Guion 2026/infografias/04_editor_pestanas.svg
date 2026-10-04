@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F2937"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Qué pestaña para qué</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">En el Editor de Power Query, cada pestaña tiene un propósito. Si lo sabes, sabrás dónde buscar.</text>
+
+  <rect x="60" y="160" width="460" height="400" rx="16" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2.5"/>
+  <path d="M60,176 a16,16 0 0 1 16,-16 h428 a16,16 0 0 1 16,16 v48 h-460 z" fill="#0E7C7B"/>
+  <text x="84" y="202" font-size="28" font-weight="700" fill="#FFFFFF">Inicio</text>
+  <text x="84" y="262" font-size="21" font-weight="700" fill="#1F2937">Entrar, salir y unir tablas</text>
+  <g font-size="19" fill="#1F2937">
+    <rect x="84" y="286" width="190" height="38" rx="19" fill="#FFFFFF" stroke="#0E7C7B"/><text x="179" y="311" text-anchor="middle">Obtener datos</text>
+    <rect x="286" y="286" width="210" height="38" rx="19" fill="#FFFFFF" stroke="#0E7C7B"/><text x="391" y="311" text-anchor="middle">Elegir columnas</text>
+    <rect x="84" y="336" width="190" height="38" rx="19" fill="#FFFFFF" stroke="#0E7C7B"/><text x="179" y="361" text-anchor="middle">Quitar filas</text>
+    <rect x="286" y="336" width="210" height="38" rx="19" fill="#FFFFFF" stroke="#0E7C7B"/><text x="391" y="361" text-anchor="middle">Mantener filas</text>
+    <rect x="84" y="386" width="412" height="38" rx="19" fill="#FFFFFF" stroke="#0E7C7B"/><text x="290" y="411" text-anchor="middle">Combinar consultas · Anexar consultas</text>
+    <rect x="84" y="436" width="412" height="38" rx="19" fill="#0E7C7B"/><text x="290" y="461" text-anchor="middle" fill="#FFFFFF" font-weight="700">Cerrar y aplicar</text>
+  </g>
+  <text x="84" y="526" font-size="18" fill="#4B5563">Aquí empiezan y terminan todas las consultas.</text>
+
+  <rect x="570" y="160" width="460" height="400" rx="16" fill="#FFF7ED" stroke="#E8743B" stroke-width="2.5"/>
+  <path d="M570,176 a16,16 0 0 1 16,-16 h428 a16,16 0 0 1 16,16 v48 h-460 z" fill="#E8743B"/>
+  <text x="594" y="202" font-size="28" font-weight="700" fill="#FFFFFF">Transformación</text>
+  <text x="594" y="262" font-size="21" font-weight="700" fill="#1F2937">Cambia la columna que ya existe</text>
+  <g font-size="19" fill="#1F2937">
+    <rect x="594" y="286" width="190" height="38" rx="19" fill="#FFFFFF" stroke="#E8743B"/><text x="689" y="311" text-anchor="middle">Tipo de datos</text>
+    <rect x="796" y="286" width="210" height="38" rx="19" fill="#FFFFFF" stroke="#E8743B"/><text x="901" y="311" text-anchor="middle">Reemplazar valores</text>
+    <rect x="594" y="336" width="190" height="38" rx="19" fill="#FFFFFF" stroke="#E8743B"/><text x="689" y="361" text-anchor="middle">Rellenar</text>
+    <rect x="796" y="336" width="210" height="38" rx="19" fill="#FFFFFF" stroke="#E8743B"/><text x="901" y="361" text-anchor="middle">Dividir columna</text>
+    <rect x="594" y="386" width="190" height="38" rx="19" fill="#FFFFFF" stroke="#E8743B"/><text x="689" y="411" text-anchor="middle">Formato</text>
+    <rect x="796" y="386" width="210" height="38" rx="19" fill="#FFFFFF" stroke="#E8743B"/><text x="901" y="411" text-anchor="middle">Agrupar por</text>
+    <rect x="594" y="436" width="412" height="38" rx="19" fill="#FFFFFF" stroke="#E8743B"/><text x="800" y="461" text-anchor="middle">Anular dinamización de columnas</text>
+  </g>
+  <text x="594" y="526" font-size="18" fill="#4B5563">El resultado sustituye a la columna original.</text>
+
+  <rect x="1080" y="160" width="460" height="400" rx="16" fill="#F5F3FF" stroke="#7B61FF" stroke-width="2.5"/>
+  <path d="M1080,176 a16,16 0 0 1 16,-16 h428 a16,16 0 0 1 16,16 v48 h-460 z" fill="#7B61FF"/>
+  <text x="1104" y="202" font-size="28" font-weight="700" fill="#FFFFFF">Agregar columna</text>
+  <text x="1104" y="262" font-size="21" font-weight="700" fill="#1F2937">Crea una columna nueva</text>
+  <g font-size="19" fill="#1F2937">
+    <rect x="1104" y="286" width="412" height="38" rx="19" fill="#FFFFFF" stroke="#7B61FF"/><text x="1310" y="311" text-anchor="middle">Columna personalizada</text>
+    <rect x="1104" y="336" width="412" height="38" rx="19" fill="#FFFFFF" stroke="#7B61FF"/><text x="1310" y="361" text-anchor="middle">Columna condicional</text>
+    <rect x="1104" y="386" width="412" height="38" rx="19" fill="#FFFFFF" stroke="#7B61FF"/><text x="1310" y="411" text-anchor="middle">Columna de índice</text>
+    <rect x="1104" y="436" width="200" height="38" rx="19" fill="#FFFFFF" stroke="#7B61FF"/><text x="1204" y="461" text-anchor="middle">Fecha</text>
+    <rect x="1316" y="436" width="200" height="38" rx="19" fill="#FFFFFF" stroke="#7B61FF"/><text x="1416" y="461" text-anchor="middle">Extraer</text>
+  </g>
+  <text x="1104" y="526" font-size="18" fill="#4B5563">La columna original se queda como estaba.</text>
+
+  <text x="60" y="618" font-size="22" font-weight="700" fill="#1F2937">La diferencia, con un ejemplo</text>
+
+  <g font-size="18" fill="#1F2937">
+    <rect x="60" y="640" width="260" height="40" fill="#F3F4F6" stroke="#D1D5DB"/><text x="76" y="666" font-weight="700">Cliente</text>
+    <rect x="60" y="680" width="260" height="40" fill="#FFFFFF" stroke="#D1D5DB"/><text x="76" y="706">  mecánicas uriarte  </text>
+    <rect x="60" y="720" width="260" height="40" fill="#FFFFFF" stroke="#D1D5DB"/><text x="76" y="746">TALLERES IBARGUEN</text>
+  </g>
+  <line x1="332" y1="700" x2="420" y2="700" stroke="#E8743B" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="376" y="680" font-size="15" text-anchor="middle" fill="#C2410C" font-weight="700">Formato</text>
+  <g font-size="18" fill="#1F2937">
+    <rect x="430" y="640" width="260" height="40" fill="#FFEDD5" stroke="#E8743B"/><text x="446" y="666" font-weight="700">Cliente</text>
+    <rect x="430" y="680" width="260" height="40" fill="#FFFFFF" stroke="#E8743B"/><text x="446" y="706">Mecánicas Uriarte</text>
+    <rect x="430" y="720" width="260" height="40" fill="#FFFFFF" stroke="#E8743B"/><text x="446" y="746">Talleres Ibarguen</text>
+  </g>
+  <text x="60" y="796" font-size="18" fill="#C2410C" font-weight="700">Transformación: sigue habiendo una columna, ahora limpia.</text>
+
+  <g font-size="18" fill="#1F2937">
+    <rect x="860" y="640" width="200" height="40" fill="#F3F4F6" stroke="#D1D5DB"/><text x="876" y="666" font-weight="700">Fecha</text>
+    <rect x="860" y="680" width="200" height="40" fill="#FFFFFF" stroke="#D1D5DB"/><text x="876" y="706">10/01/2025</text>
+    <rect x="860" y="720" width="200" height="40" fill="#FFFFFF" stroke="#D1D5DB"/><text x="876" y="746">03/02/2024</text>
+  </g>
+  <line x1="1072" y1="700" x2="1160" y2="700" stroke="#7B61FF" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="1116" y="680" font-size="15" text-anchor="middle" fill="#5B21B6" font-weight="700">Fecha &gt; Año</text>
+  <g font-size="18" fill="#1F2937">
+    <rect x="1170" y="640" width="200" height="40" fill="#F3F4F6" stroke="#D1D5DB"/><text x="1186" y="666" font-weight="700">Fecha</text>
+    <rect x="1170" y="680" width="200" height="40" fill="#FFFFFF" stroke="#D1D5DB"/><text x="1186" y="706">10/01/2025</text>
+    <rect x="1170" y="720" width="200" height="40" fill="#FFFFFF" stroke="#D1D5DB"/><text x="1186" y="746">03/02/2024</text>
+    <rect x="1370" y="640" width="170" height="40" fill="#EDE9FE" stroke="#7B61FF"/><text x="1386" y="666" font-weight="700">Año</text>
+    <rect x="1370" y="680" width="170" height="40" fill="#FFFFFF" stroke="#7B61FF"/><text x="1386" y="706">2025</text>
+    <rect x="1370" y="720" width="170" height="40" fill="#FFFFFF" stroke="#7B61FF"/><text x="1386" y="746">2024</text>
+  </g>
+  <text x="860" y="796" font-size="18" fill="#5B21B6" font-weight="700">Agregar columna: la original sigue y aparece una nueva.</text>
+
+  <rect x="60" y="826" width="1480" height="52" rx="10" fill="#FEF3C7"/>
+  <text x="84" y="859" font-size="20" fill="#1F2937"><tspan font-weight="700">Ver:</tspan> activa Calidad de columna, Distribución de columnas y Perfil de columna. Verás vacíos, errores y valores distintos de un vistazo.</text>
+</svg>
