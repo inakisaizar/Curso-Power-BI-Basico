@@ -8,7 +8,7 @@ Notas de sesión, tiempos y decisiones. No forma parte del entregable del alumno
 |---|---|---|---|
 | Auditoría del guion anterior | | `00_Auditoria.md` | Aprobado |
 | 1. Primeros pasos | `01_Arranque.md` | `01_Arranque_sesion.md` | Aprobado |
-| 2. Power Query | | | Pendiente |
+| 2. Power Query | `02_Power_Query.md` | `02_Power_Query_sesion.md` | Aprobado |
 | 3. Modelado | | | Pendiente |
 | 4. DAX | | | Pendiente |
 | 5. Visualización | | | Pendiente |
@@ -20,10 +20,13 @@ Notas de sesión, tiempos y decisiones. No forma parte del entregable del alumno
 - **Ruta fija** `C:\Curso-Power-BI-Basico-main\`: los .pbix de punto de control funcionan en cualquier equipo sin cambiar el origen.
 - **Formato:** capítulos en Markdown para el alumno, infografías SVG 16:9 intercaladas, también para proyectar.
 - **Separación:** el material del alumno en `Guion 2026/`; lo del profesor en `Guion 2026/_profesor/`.
+- **Excel del repo:** se mantienen sin modificar los que usa el curso. Eliminados por no usarse: Transponer (1.6), Parámetros (bloque 4) y mini proyecto (bloque 5). Nuevo: `Ejercicios Power Query/PQ Carpeta/Ventas_2024/` (12 CSV generados a partir de `Ventas_Planas.xlsx`).
+- **Nombre de la pestaña:** en la versión en castellano es **Transformación**.
 
 ## Pendiente antes del curso
 
 - [ ] Confirmar con la Cámara que los equipos permiten escribir en `C:\` (plan B: `C:\Users\Public\`).
 - [ ] Cambiar el origen de datos de los .pbix del repo a `C:\Curso-Power-BI-Basico-main\...`.
-- [ ] Preparar los .pbix de punto de control (tras Power Query, tras modelado, tras medidas).
+- [ ] Preparar los .pbix de punto de control (tras Power Query, tras modelado, tras medidas). El primero: `Proyecto Modelo de Ventas/Checkpoint_Cap2_PowerQuery.pbix`, al terminar el proyecto 2.7.
+- [ ] Confirmar en Power BI Desktop (actualización de septiembre) el nombre y la ubicación de la vista de diagrama y la vista de esquema, y ajustar el apartado 2.2 y la infografía 08 si hace falta.
 - [ ] Revisar que los nombres de menús de los capítulos coinciden con la versión de Power BI Desktop instalada en la Cámara.
