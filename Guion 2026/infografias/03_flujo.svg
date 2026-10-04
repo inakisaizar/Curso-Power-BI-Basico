@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F2937"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Del dato a la decisión</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Todo proyecto de Power BI sigue el mismo camino. El curso pone el peso donde está el valor.</text>
+
+  <rect x="60" y="170" width="300" height="440" rx="16" fill="#F9FAFB" stroke="#9CA3AF" stroke-width="2"/>
+  <text x="210" y="216" font-size="17" font-weight="700" text-anchor="middle" fill="#6B7280">1 · ORÍGENES</text>
+  <g fill="none" stroke="#1F2937" stroke-width="3">
+    <ellipse cx="210" cy="256" rx="40" ry="12"/>
+    <path d="M170,256 v46 a40,12 0 0 0 80,0 v-46"/>
+    <path d="M170,279 a40,12 0 0 0 80,0"/>
+  </g>
+  <text x="210" y="356" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">Tus datos</text>
+  <g font-size="19" fill="#374151" text-anchor="middle">
+    <text x="210" y="398">Excel y CSV</text>
+    <text x="210" y="426">Carpetas de archivos</text>
+    <text x="210" y="454">ERP y bases de datos</text>
+    <text x="210" y="482">SharePoint y web</text>
+  </g>
+  <text x="210" y="560" font-size="17" text-anchor="middle" fill="#6B7280">Tal como salen:</text>
+  <text x="210" y="584" font-size="17" text-anchor="middle" fill="#6B7280">sucios y desordenados</text>
+
+  <rect x="420" y="170" width="340" height="440" rx="16" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2.5"/>
+  <text x="590" y="216" font-size="17" font-weight="700" text-anchor="middle" fill="#0E7C7B">2 · PREPARAR</text>
+  <g fill="none" stroke="#1F2937" stroke-width="3">
+    <circle cx="590" cy="276" r="26"/><circle cx="590" cy="276" r="9"/>
+    <line x1="590" y1="240" x2="590" y2="250"/><line x1="590" y1="302" x2="590" y2="312"/>
+    <line x1="554" y1="276" x2="564" y2="276"/><line x1="616" y1="276" x2="626" y2="276"/>
+  </g>
+  <text x="590" y="356" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">Power Query</text>
+  <g font-size="19" fill="#374151" text-anchor="middle">
+    <text x="590" y="398">Conectar, limpiar, combinar</text>
+    <text x="590" y="426">Construir las tablas de</text>
+    <text x="590" y="454" font-weight="700" fill="#1F2937">hechos y dimensiones</text>
+  </g>
+  <text x="590" y="560" font-size="17" text-anchor="middle" fill="#0E7C7B">Ventana: Editor de Power Query</text>
+
+  <rect x="820" y="152" width="380" height="476" rx="18" fill="#FFF7ED" stroke="#E8743B" stroke-width="4"/>
+  <rect x="900" y="134" width="220" height="36" rx="18" fill="#E8743B"/>
+  <text x="1010" y="159" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">EL CORAZÓN</text>
+  <text x="1010" y="216" font-size="17" font-weight="700" text-anchor="middle" fill="#C2410C">3 · MODELAR</text>
+  <g stroke="#1F2937" stroke-width="2.5">
+    <line x1="1010" y1="276" x2="960" y2="248"/><line x1="1010" y1="276" x2="1060" y2="248"/>
+    <line x1="1010" y1="276" x2="960" y2="304"/><line x1="1010" y1="276" x2="1060" y2="304"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#1F2937" stroke-width="2.5">
+    <rect x="936" y="236" width="30" height="22" rx="3"/><rect x="1054" y="236" width="30" height="22" rx="3"/>
+    <rect x="936" y="294" width="30" height="22" rx="3"/><rect x="1054" y="294" width="30" height="22" rx="3"/>
+  </g>
+  <rect x="990" y="262" width="40" height="28" rx="3" fill="#E8743B" stroke="#1F2937" stroke-width="2.5"/>
+  <text x="1010" y="356" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">Modelo semántico</text>
+  <g font-size="19" fill="#374151" text-anchor="middle">
+    <text x="1010" y="398">Relaciones en estrella</text>
+    <text x="1010" y="426">Medidas DAX: ventas, margen,</text>
+    <text x="1010" y="454">variación vs. año anterior</text>
+    <text x="1010" y="490" font-weight="700" fill="#1F2937">Cualquier medida, cruzada</text>
+    <text x="1010" y="516" font-weight="700" fill="#1F2937">por cualquier atributo</text>
+  </g>
+  <text x="1010" y="572" font-size="17" text-anchor="middle" fill="#C2410C">Desktop: Vista de modelo y de tabla</text>
+
+  <rect x="1260" y="170" width="280" height="440" rx="16" fill="#FFFDF2" stroke="#C9A400" stroke-width="2"/>
+  <text x="1400" y="216" font-size="17" font-weight="700" text-anchor="middle" fill="#A16207">4 · VISUALIZAR</text>
+  <g fill="none" stroke="#1F2937" stroke-width="3">
+    <line x1="1370" y1="304" x2="1370" y2="276"/><line x1="1392" y1="304" x2="1392" y2="256"/><line x1="1414" y1="304" x2="1414" y2="266"/><line x1="1436" y1="304" x2="1436" y2="244"/>
+    <line x1="1360" y1="308" x2="1446" y2="308"/>
+  </g>
+  <text x="1400" y="356" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">Informe</text>
+  <g font-size="19" fill="#374151" text-anchor="middle">
+    <text x="1400" y="398">Gráficos, tarjetas</text>
+    <text x="1400" y="426">y filtros que responden</text>
+    <text x="1400" y="454">a preguntas de negocio</text>
+  </g>
+  <text x="1400" y="560" font-size="17" text-anchor="middle" fill="#A16207">Desktop: Vista de informe</text>
+
+  <line x1="362" y1="390" x2="414" y2="390" stroke="#1F2937" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="762" y1="390" x2="814" y2="390" stroke="#1F2937" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="1202" y1="390" x2="1254" y2="390" stroke="#1F2937" stroke-width="3" marker-end="url(#arr)"/>
+
+  <path d="M1010,630 C1010,690 1250,690 1330,690" fill="none" stroke="#7B61FF" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arr)"/>
+  <rect x="1336" y="664" width="204" height="54" rx="27" fill="#F5F3FF" stroke="#7B61FF" stroke-width="2"/>
+  <text x="1438" y="697" font-size="18" font-weight="700" text-anchor="middle" fill="#5B21B6">IA (Copilot, agentes)</text>
+  <text x="1300" y="742" font-size="17" text-anchor="end" fill="#5B21B6">Mañana, la IA consultará el mismo modelo y creará los informes al vuelo.</text>
+
+  <text x="60" y="796" font-size="20" font-weight="700" fill="#1F2937">Horas por fase (de las 20 del curso)</text>
+  <rect x="60" y="814" width="700" height="44" rx="6" fill="#0E7C7B"/>
+  <text x="80" y="843" font-size="19" font-weight="700" fill="#FFFFFF">Power Query · 7 h</text>
+  <rect x="770" y="814" width="600" height="44" rx="6" fill="#E8743B"/>
+  <text x="790" y="843" font-size="19" font-weight="700" fill="#FFFFFF">Modelado y DAX · 6 h</text>
+  <rect x="1380" y="814" width="160" height="44" rx="6" fill="#F2C811"/>
+  <text x="1396" y="843" font-size="19" font-weight="700" fill="#1F2937">Visual · 2 h</text>
+</svg>

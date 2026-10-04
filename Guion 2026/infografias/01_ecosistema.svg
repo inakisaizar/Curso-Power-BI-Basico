@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F2937"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Power BI son tres piezas</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Se construye en el ordenador, se comparte en la nube y se consulta desde cualquier sitio.</text>
+
+  <rect x="60" y="170" width="440" height="560" rx="16" fill="#FFFDF2" stroke="#C9A400" stroke-width="2.5"/>
+  <rect x="60" y="170" width="440" height="12" rx="6" fill="#F2C811"/>
+  <g fill="none" stroke="#1F2937" stroke-width="3">
+    <rect x="236" y="212" width="88" height="60" rx="5"/>
+    <line x1="280" y1="272" x2="280" y2="290"/><line x1="258" y1="292" x2="302" y2="292"/>
+  </g>
+  <text x="280" y="342" font-size="30" font-weight="700" text-anchor="middle" fill="#1F2937">Power BI Desktop</text>
+  <text x="280" y="374" font-size="19" text-anchor="middle" fill="#6B7280">Programa para Windows · Gratis</text>
+  <line x1="92" y1="400" x2="468" y2="400" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="92" y="438" font-size="20" font-weight="700" fill="#1F2937">Para qué</text>
+  <g font-size="20" fill="#374151">
+    <text x="92" y="470">Conectar y limpiar datos</text>
+    <text x="92" y="500">Construir el modelo</text>
+    <text x="92" y="530">Crear medidas e informes</text>
+  </g>
+  <text x="92" y="582" font-size="20" font-weight="700" fill="#1F2937">Quién</text>
+  <text x="92" y="614" font-size="20" fill="#374151">Quien construye el informe</text>
+  <rect x="92" y="652" width="376" height="50" rx="25" fill="#F2C811"/>
+  <text x="280" y="684" font-size="20" font-weight="700" text-anchor="middle" fill="#1F2937">Este curso: el 90 % aquí</text>
+
+  <rect x="580" y="170" width="440" height="560" rx="16" fill="#F0F7FF" stroke="#0078D4" stroke-width="2.5"/>
+  <rect x="580" y="170" width="440" height="12" rx="6" fill="#0078D4"/>
+  <path d="M760,286 h84 a22,22 0 0 0 0,-44 a32,32 0 0 0 -60,-12 a24,24 0 0 0 -24,56 z" fill="none" stroke="#1F2937" stroke-width="3"/>
+  <text x="800" y="342" font-size="30" font-weight="700" text-anchor="middle" fill="#1F2937">Power BI Service</text>
+  <text x="800" y="374" font-size="19" text-anchor="middle" fill="#6B7280">Web: app.powerbi.com · Licencia Pro</text>
+  <line x1="612" y1="400" x2="988" y2="400" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="612" y="438" font-size="20" font-weight="700" fill="#1F2937">Para qué</text>
+  <g font-size="20" fill="#374151">
+    <text x="612" y="470">Publicar y compartir informes</text>
+    <text x="612" y="500">Actualizar datos automáticamente</text>
+    <text x="612" y="530">Controlar quién ve qué</text>
+  </g>
+  <text x="612" y="582" font-size="20" font-weight="700" fill="#1F2937">Quién</text>
+  <text x="612" y="614" font-size="20" fill="#374151">Dirección y equipos que consultan</text>
+
+  <rect x="1100" y="170" width="440" height="560" rx="16" fill="#F5F3FF" stroke="#7B61FF" stroke-width="2.5"/>
+  <rect x="1100" y="170" width="440" height="12" rx="6" fill="#7B61FF"/>
+  <g fill="none" stroke="#1F2937" stroke-width="3">
+    <rect x="1298" y="206" width="44" height="80" rx="8"/>
+    <line x1="1312" y1="276" x2="1328" y2="276"/>
+  </g>
+  <text x="1320" y="342" font-size="30" font-weight="700" text-anchor="middle" fill="#1F2937">Power BI Mobile</text>
+  <text x="1320" y="374" font-size="19" text-anchor="middle" fill="#6B7280">App para iOS y Android</text>
+  <line x1="1132" y1="400" x2="1508" y2="400" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="1132" y="438" font-size="20" font-weight="700" fill="#1F2937">Para qué</text>
+  <g font-size="20" fill="#374151">
+    <text x="1132" y="470">Consultar informes publicados</text>
+    <text x="1132" y="500">Recibir alertas</text>
+    <text x="1132" y="530">No sirve para crear informes</text>
+  </g>
+  <text x="1132" y="582" font-size="20" font-weight="700" fill="#1F2937">Quién</text>
+  <text x="1132" y="614" font-size="20" fill="#374151">Cualquiera, desde el móvil</text>
+
+  <line x1="502" y1="450" x2="574" y2="450" stroke="#1F2937" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="1022" y1="450" x2="1094" y2="450" stroke="#1F2937" stroke-width="3" marker-end="url(#arr)"/>
+
+  <rect x="60" y="770" width="1480" height="90" rx="12" fill="#F3F4F6"/>
+  <text x="800" y="806" font-size="22" font-weight="700" text-anchor="middle" fill="#1F2937">Construyes en Desktop   →   Publicas en Service   →   Consultan en web o móvil</text>
+  <text x="800" y="842" font-size="19" text-anchor="middle" fill="#6B7280">Desktop no comparte: para que otros vean tu informe hay que publicarlo en Service.</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F2937"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">¿Dónde estoy?</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Power BI Desktop trabaja con dos ventanas. Antes de cada práctica, comprueba en cuál estás.</text>
+
+  <rect x="60" y="160" width="690" height="590" rx="14" fill="#FFFDF2" stroke="#C9A400" stroke-width="2.5"/>
+  <path d="M60,174 a14,14 0 0 1 14,-14 h662 a14,14 0 0 1 14,14 v40 h-690 z" fill="#F2C811"/>
+  <text x="84" y="199" font-size="24" font-weight="700" fill="#1F2937">Ventana 1 · Power BI Desktop</text>
+
+  <rect x="84" y="236" width="64" height="380" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <g fill="none" stroke="#1F2937" stroke-width="2.2">
+    <rect x="101" y="258" width="30" height="30" rx="3"/>
+    <line x1="109" y1="282" x2="109" y2="272"/><line x1="116" y1="282" x2="116" y2="266"/><line x1="123" y1="282" x2="123" y2="276"/>
+    <rect x="101" y="348" width="30" height="30" rx="3"/>
+    <line x1="101" y1="358" x2="131" y2="358"/><line x1="101" y1="368" x2="131" y2="368"/><line x1="113" y1="348" x2="113" y2="378"/>
+    <rect x="100" y="436" width="13" height="11" rx="2"/><rect x="120" y="436" width="13" height="11" rx="2"/><rect x="110" y="458" width="13" height="11" rx="2"/>
+    <line x1="107" y1="447" x2="114" y2="458"/><line x1="126" y1="447" x2="119" y2="458"/>
+    <rect x="101" y="528" width="30" height="30" rx="3"/>
+  </g>
+  <text x="116" y="548" font-size="11" font-weight="700" text-anchor="middle" fill="#1F2937">DAX</text>
+
+  <g font-size="21">
+    <text x="172" y="268" font-weight="700" fill="#1F2937">Vista de informe</text>
+    <text x="172" y="294" fill="#4B5563">Diseñar páginas, gráficos y filtros</text>
+    <text x="172" y="358" font-weight="700" fill="#1F2937">Vista de tabla</text>
+    <text x="172" y="384" fill="#4B5563">Ver los datos ya cargados en el modelo</text>
+    <text x="172" y="448" font-weight="700" fill="#1F2937">Vista de modelo</text>
+    <text x="172" y="474" fill="#4B5563">Relacionar tablas: el modelo en estrella</text>
+    <text x="172" y="538" font-weight="700" fill="#1F2937">Vista de consultas DAX</text>
+    <text x="172" y="564" fill="#4B5563">Preguntar al modelo (lo veremos al final)</text>
+  </g>
+  <line x1="148" y1="273" x2="164" y2="273" stroke="#C9A400" stroke-width="2"/>
+  <line x1="148" y1="363" x2="164" y2="363" stroke="#C9A400" stroke-width="2"/>
+  <line x1="148" y1="453" x2="164" y2="453" stroke="#C9A400" stroke-width="2"/>
+  <line x1="148" y1="543" x2="164" y2="543" stroke="#C9A400" stroke-width="2"/>
+
+  <rect x="84" y="640" width="642" height="88" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="104" y="674" font-size="20" font-weight="700" fill="#1F2937">En la Vista de informe, paneles a la derecha:</text>
+  <text x="104" y="706" font-size="20" fill="#4B5563">Filtros  ·  Visualizaciones  ·  Datos (tablas, columnas y medidas)</text>
+
+  <rect x="850" y="160" width="690" height="590" rx="14" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2.5"/>
+  <path d="M850,174 a14,14 0 0 1 14,-14 h662 a14,14 0 0 1 14,14 v40 h-690 z" fill="#0E7C7B"/>
+  <text x="874" y="199" font-size="24" font-weight="700" fill="#FFFFFF">Ventana 2 · Editor de Power Query</text>
+
+  <rect x="874" y="232" width="642" height="46" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="892" y="262" font-size="19" fill="#1F2937">Inicio   ·   Transformar   ·   Agregar columna   ·   Ver</text>
+
+  <rect x="874" y="292" width="140" height="300" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="944" y="324" font-size="18" font-weight="700" text-anchor="middle" fill="#1F2937">Consultas</text>
+  <g fill="#E5F3F2"><rect x="888" y="340" width="112" height="22" rx="4"/><rect x="888" y="370" width="112" height="22" rx="4"/><rect x="888" y="400" width="112" height="22" rx="4"/></g>
+
+  <rect x="1026" y="292" width="300" height="40" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="1042" y="319" font-size="17" fill="#6B7280" font-style="italic">fx  Barra de fórmulas</text>
+  <rect x="1026" y="344" width="300" height="248" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <g stroke="#E5E7EB" stroke-width="1.5">
+    <line x1="1026" y1="380" x2="1326" y2="380"/><line x1="1026" y1="412" x2="1326" y2="412"/><line x1="1026" y1="444" x2="1326" y2="444"/><line x1="1026" y1="476" x2="1326" y2="476"/>
+    <line x1="1126" y1="344" x2="1126" y2="592"/><line x1="1226" y1="344" x2="1226" y2="592"/>
+  </g>
+  <text x="1176" y="540" font-size="18" font-weight="700" text-anchor="middle" fill="#1F2937">Vista previa de datos</text>
+
+  <rect x="1338" y="292" width="178" height="300" rx="6" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="2.5"/>
+  <text x="1427" y="324" font-size="18" font-weight="700" text-anchor="middle" fill="#0E7C7B">Pasos aplicados</text>
+  <g font-size="16" fill="#1F2937">
+    <text x="1352" y="358">1. Origen</text>
+    <text x="1352" y="384">2. Navegación</text>
+    <text x="1352" y="410">3. Tipo cambiado</text>
+    <text x="1352" y="436">4. Filas filtradas</text>
+  </g>
+
+  <rect x="874" y="640" width="642" height="88" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="894" y="674" font-size="20" font-weight="700" fill="#1F2937">Aquí se limpian y preparan los datos.</text>
+  <text x="894" y="706" font-size="19" fill="#4B5563">Cada clic queda grabado como un paso. El Excel no se toca.</text>
+
+  <path d="M750,300 C790,300 810,300 846,300" fill="none" stroke="#1F2937" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="756" y="248" width="88" height="40" rx="6" fill="#1F2937"/>
+  <text x="800" y="274" font-size="16" font-weight="700" text-anchor="middle" fill="#FFFFFF">IR</text>
+  <path d="M850,610 C810,610 790,610 754,610" fill="none" stroke="#1F2937" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="756" y="620" width="88" height="40" rx="6" fill="#1F2937"/>
+  <text x="800" y="646" font-size="16" font-weight="700" text-anchor="middle" fill="#FFFFFF">VOLVER</text>
+
+  <text x="60" y="796" font-size="20" fill="#1F2937"><tspan font-weight="700">IR a Power Query: </tspan>Inicio &gt; Transformar datos</text>
+  <text x="850" y="796" font-size="20" fill="#1F2937"><tspan font-weight="700">VOLVER a Desktop: </tspan>Inicio &gt; Cerrar y aplicar</text>
+
+  <rect x="60" y="820" width="1480" height="56" rx="10" fill="#FEF3C7"/>
+  <text x="84" y="856" font-size="20" fill="#1F2937"><tspan font-weight="700">Pista rápida:</tspan> ¿ves «Pasos aplicados» a la derecha? Estás en Power Query. ¿Ves iconos en una barra a la izquierda? Estás en Desktop.</text>
+</svg>
