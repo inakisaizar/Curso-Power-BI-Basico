@@ -77,7 +77,7 @@ En la barra de la izquierda tienes las vistas:
 
 Se abre aparte y tiene otro aspecto:
 
-- Arriba, sus propias pestañas: **Inicio**, **Transformar**, **Agregar columna** y **Ver**.
+- Arriba, sus propias pestañas: **Inicio**, **Transformación**, **Agregar columna** y **Ver**.
 - A la izquierda, el panel **Consultas**, con una consulta por cada tabla.
 - En el centro, la **barra de fórmulas** y la **vista previa de datos**.
 - A la derecha, **Configuración de la consulta**, con los **Pasos aplicados**. Cada transformación que haces queda grabada como un paso que puedes revisar, cambiar o borrar. El archivo original nunca se modifica.

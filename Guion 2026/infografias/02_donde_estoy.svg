@@ -49,7 +49,7 @@
   <text x="874" y="199" font-size="24" font-weight="700" fill="#FFFFFF">Ventana 2 · Editor de Power Query</text>
 
   <rect x="874" y="232" width="642" height="46" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
-  <text x="892" y="262" font-size="19" fill="#1F2937">Inicio   ·   Transformar   ·   Agregar columna   ·   Ver</text>
+  <text x="892" y="262" font-size="19" fill="#1F2937">Inicio   ·   Transformación   ·   Agregar columna   ·   Ver</text>
 
   <rect x="874" y="292" width="140" height="300" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
   <text x="944" y="324" font-size="18" font-weight="700" text-anchor="middle" fill="#1F2937">Consultas</text>
