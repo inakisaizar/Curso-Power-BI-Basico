@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F2937"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">De ancho a largo</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Un informe de Excel tiene una columna por mes. Una tabla para analizar tiene una fila por cada dato.</text>
+
+  <text x="60" y="190" font-size="22" font-weight="700" fill="#C2410C">ANCHO · cómodo de leer, malo para analizar</text>
+  <g font-size="19" fill="#1F2937">
+    <rect x="60" y="210" width="200" height="44" fill="#E5E7EB" stroke="#9CA3AF"/><text x="74" y="239" font-weight="700">Cliente</text>
+    <rect x="260" y="210" width="110" height="44" fill="#FFEDD5" stroke="#E8743B"/><text x="274" y="239" font-weight="700">Enero</text>
+    <rect x="370" y="210" width="110" height="44" fill="#FFEDD5" stroke="#E8743B"/><text x="384" y="239" font-weight="700">Febrero</text>
+    <rect x="480" y="210" width="110" height="44" fill="#FFEDD5" stroke="#E8743B"/><text x="494" y="239" font-weight="700">Marzo</text>
+
+    <rect x="60" y="254" width="200" height="40" fill="#FFF" stroke="#D1D5DB"/><text x="74" y="281">Mecanizados Norte</text>
+    <rect x="260" y="254" width="110" height="40" fill="#FFF" stroke="#D1D5DB"/><text x="274" y="281">2.862</text>
+    <rect x="370" y="254" width="110" height="40" fill="#FFF" stroke="#D1D5DB"/><text x="384" y="281">2.781</text>
+    <rect x="480" y="254" width="110" height="40" fill="#FFF" stroke="#D1D5DB"/><text x="494" y="281">2.298</text>
+
+    <rect x="60" y="294" width="200" height="40" fill="#FFF" stroke="#D1D5DB"/><text x="74" y="321">Tornería Iruña</text>
+    <rect x="260" y="294" width="110" height="40" fill="#FFF" stroke="#D1D5DB"/><text x="274" y="321">2.062</text>
+    <rect x="370" y="294" width="110" height="40" fill="#FFF" stroke="#D1D5DB"/><text x="384" y="321">513</text>
+    <rect x="480" y="294" width="110" height="40" fill="#FFF" stroke="#D1D5DB"/><text x="494" y="321">1.137</text>
+  </g>
+  <g font-size="19" fill="#374151">
+    <text x="60" y="390">✗  No puedes filtrar ni agrupar por mes</text>
+    <text x="60" y="424">✗  Abril obliga a cambiar la estructura</text>
+    <text x="60" y="458">✗  Cada mes es una columna distinta</text>
+  </g>
+
+  <line x1="640" y1="300" x2="830" y2="300" stroke="#1F2937" stroke-width="4" marker-end="url(#arr)"/>
+  <rect x="616" y="320" width="240" height="88" rx="12" fill="#1F2937"/>
+  <text x="736" y="352" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">Anular dinamización</text>
+  <text x="736" y="376" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">de otras columnas</text>
+  <text x="736" y="398" font-size="14" text-anchor="middle" fill="#D1D5DB">(con Cliente seleccionada)</text>
+
+  <text x="880" y="190" font-size="22" font-weight="700" fill="#0E7C7B">LARGO · listo para Power BI</text>
+  <g font-size="19" fill="#1F2937">
+    <rect x="880" y="210" width="220" height="44" fill="#E5E7EB" stroke="#9CA3AF"/><text x="894" y="239" font-weight="700">Cliente</text>
+    <rect x="1100" y="210" width="140" height="44" fill="#CCE7E6" stroke="#0E7C7B"/><text x="1114" y="239" font-weight="700">Mes</text>
+    <rect x="1240" y="210" width="140" height="44" fill="#CCE7E6" stroke="#0E7C7B"/><text x="1254" y="239" font-weight="700">Importe</text>
+  </g>
+  <g font-size="19" fill="#1F2937">
+    <rect x="880" y="254" width="220" height="38" fill="#FFF" stroke="#D1D5DB"/><text x="894" y="280">Mecanizados Norte</text>
+    <rect x="1100" y="254" width="140" height="38" fill="#FFF" stroke="#D1D5DB"/><text x="1114" y="280">Enero</text>
+    <rect x="1240" y="254" width="140" height="38" fill="#FFF" stroke="#D1D5DB"/><text x="1254" y="280">2.862</text>
+    <rect x="880" y="292" width="220" height="38" fill="#FFF" stroke="#D1D5DB"/><text x="894" y="318">Mecanizados Norte</text>
+    <rect x="1100" y="292" width="140" height="38" fill="#FFF" stroke="#D1D5DB"/><text x="1114" y="318">Febrero</text>
+    <rect x="1240" y="292" width="140" height="38" fill="#FFF" stroke="#D1D5DB"/><text x="1254" y="318">2.781</text>
+    <rect x="880" y="330" width="220" height="38" fill="#FFF" stroke="#D1D5DB"/><text x="894" y="356">Mecanizados Norte</text>
+    <rect x="1100" y="330" width="140" height="38" fill="#FFF" stroke="#D1D5DB"/><text x="1114" y="356">Marzo</text>
+    <rect x="1240" y="330" width="140" height="38" fill="#FFF" stroke="#D1D5DB"/><text x="1254" y="356">2.298</text>
+    <rect x="880" y="368" width="220" height="38" fill="#F9FAFB" stroke="#D1D5DB"/><text x="894" y="394">Tornería Iruña</text>
+    <rect x="1100" y="368" width="140" height="38" fill="#F9FAFB" stroke="#D1D5DB"/><text x="1114" y="394">Enero</text>
+    <rect x="1240" y="368" width="140" height="38" fill="#F9FAFB" stroke="#D1D5DB"/><text x="1254" y="394">2.062</text>
+    <rect x="880" y="406" width="220" height="38" fill="#F9FAFB" stroke="#D1D5DB"/><text x="894" y="432">Tornería Iruña</text>
+    <rect x="1100" y="406" width="140" height="38" fill="#F9FAFB" stroke="#D1D5DB"/><text x="1114" y="432">Febrero</text>
+    <rect x="1240" y="406" width="140" height="38" fill="#F9FAFB" stroke="#D1D5DB"/><text x="1254" y="432">513</text>
+    <rect x="880" y="444" width="220" height="38" fill="#F9FAFB" stroke="#D1D5DB"/><text x="894" y="470">Tornería Iruña</text>
+    <rect x="1100" y="444" width="140" height="38" fill="#F9FAFB" stroke="#D1D5DB"/><text x="1114" y="470">Marzo</text>
+    <rect x="1240" y="444" width="140" height="38" fill="#F9FAFB" stroke="#D1D5DB"/><text x="1254" y="470">1.137</text>
+  </g>
+  <g font-size="19" fill="#374151">
+    <text x="880" y="530">✓  Filtras y agrupas por Mes como cualquier columna</text>
+    <text x="880" y="564">✓  Abril son tres filas más, sin tocar nada</text>
+    <text x="880" y="598">✓  Una sola columna de Importe para sumar</text>
+  </g>
+
+  <rect x="60" y="660" width="1480" height="120" rx="14" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2"/>
+  <text x="90" y="704" font-size="24" font-weight="700" fill="#0E7C7B">Regla de oro de una tabla de hechos</text>
+  <text x="90" y="744" font-size="21" fill="#1F2937">Una fila por cada hecho y una columna por cada característica. Nunca una columna por cada mes, año o tienda.</text>
+
+  <rect x="60" y="806" width="1480" height="56" rx="10" fill="#FEF3C7"/>
+  <text x="84" y="842" font-size="20" fill="#1F2937"><tspan font-weight="700">Truco:</tspan> selecciona las columnas que NO son meses y usa «Anular dinamización de otras columnas». Así incluirá también los meses futuros.</text>
+</svg>

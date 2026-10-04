@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Cada clic, una línea de código</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Tú usas la interfaz; Power Query lo escribe en lenguaje M. Cada paso parte del resultado del anterior.</text>
+
+  <g font-size="20" font-weight="700">
+    <text x="60" y="180" fill="#0E7C7B">LO QUE HACES</text>
+    <text x="440" y="180" fill="#E8743B">LO QUE VES EN PASOS APLICADOS</text>
+    <text x="840" y="180" fill="#5B21B6">LO QUE ESCRIBE POWER QUERY (M)</text>
+  </g>
+
+  <g font-size="18">
+    <rect x="60" y="200" width="340" height="80" rx="10" fill="#F1FAF9" stroke="#0E7C7B"/>
+    <text x="78" y="232" fill="#1F2937" font-weight="700">Obtener datos</text>
+    <text x="78" y="258" fill="#4B5563" font-size="16">Libro de Excel</text>
+    <rect x="440" y="200" width="360" height="80" rx="10" fill="#FFF7ED" stroke="#E8743B"/>
+    <text x="460" y="247" fill="#1F2937" font-weight="700">1. Origen</text>
+    <rect x="840" y="200" width="700" height="80" rx="10" fill="#F5F3FF" stroke="#7B61FF"/>
+    <text x="858" y="247" fill="#1F2937" font-size="16" font-family="Consolas, Courier New, monospace">Origen = Excel.Workbook(File.Contents("...xlsx"), ...)</text>
+
+    <rect x="60" y="300" width="340" height="80" rx="10" fill="#F1FAF9" stroke="#0E7C7B"/>
+    <text x="78" y="332" fill="#1F2937" font-weight="700">Elegir la tabla</text>
+    <text x="78" y="358" fill="#4B5563" font-size="16">en el Navegador</text>
+    <rect x="440" y="300" width="360" height="80" rx="10" fill="#FFF7ED" stroke="#E8743B"/>
+    <text x="460" y="347" fill="#1F2937" font-weight="700">2. Tabla1_Table</text>
+    <rect x="840" y="300" width="700" height="80" rx="10" fill="#F5F3FF" stroke="#7B61FF"/>
+    <text x="858" y="347" fill="#1F2937" font-size="16" font-family="Consolas, Courier New, monospace">Tabla1_Table = <tspan fill="#C2410C" font-weight="700">Origen</tspan>{[Item="Tabla1",Kind="Table"]}[Data]</text>
+
+    <rect x="60" y="400" width="340" height="80" rx="10" fill="#F1FAF9" stroke="#0E7C7B"/>
+    <text x="78" y="432" fill="#1F2937" font-weight="700">Cambiar el tipo</text>
+    <text x="78" y="458" fill="#4B5563" font-size="16">icono junto al encabezado</text>
+    <rect x="440" y="400" width="360" height="80" rx="10" fill="#FFF7ED" stroke="#E8743B"/>
+    <text x="460" y="447" fill="#1F2937" font-weight="700">3. Tipo cambiado</text>
+    <rect x="840" y="400" width="700" height="80" rx="10" fill="#F5F3FF" stroke="#7B61FF"/>
+    <text x="858" y="447" fill="#1F2937" font-size="16" font-family="Consolas, Courier New, monospace">#"Tipo cambiado" = Table.TransformColumnTypes(<tspan fill="#C2410C" font-weight="700">Tabla1_Table</tspan>, ...)</text>
+
+    <rect x="60" y="500" width="340" height="80" rx="10" fill="#F1FAF9" stroke="#0E7C7B"/>
+    <text x="78" y="532" fill="#1F2937" font-weight="700">Filtrar la columna Tipo</text>
+    <text x="78" y="558" fill="#4B5563" font-size="16">desplegable del encabezado</text>
+    <rect x="440" y="500" width="360" height="80" rx="10" fill="#FFF7ED" stroke="#E8743B"/>
+    <text x="460" y="547" fill="#1F2937" font-weight="700">4. Filas filtradas</text>
+    <rect x="840" y="500" width="700" height="80" rx="10" fill="#F5F3FF" stroke="#7B61FF"/>
+    <text x="858" y="537" fill="#1F2937" font-size="16" font-family="Consolas, Courier New, monospace">#"Filas filtradas" = Table.SelectRows(<tspan fill="#C2410C" font-weight="700">#"Tipo cambiado"</tspan>,</text>
+    <text x="858" y="562" fill="#1F2937" font-size="16" font-family="Consolas, Courier New, monospace">    each [Tipo] = "Materia Prima")</text>
+  </g>
+
+  <g stroke="#9CA3AF" stroke-width="2.5" marker-end="url(#arr)">
+    <line x1="404" y1="240" x2="434" y2="240"/><line x1="804" y1="240" x2="834" y2="240"/>
+    <line x1="404" y1="340" x2="434" y2="340"/><line x1="804" y1="340" x2="834" y2="340"/>
+    <line x1="404" y1="440" x2="434" y2="440"/><line x1="804" y1="440" x2="834" y2="440"/>
+    <line x1="404" y1="540" x2="434" y2="540"/><line x1="804" y1="540" x2="834" y2="540"/>
+  </g>
+
+  <rect x="60" y="612" width="720" height="176" rx="14" fill="#FFF7ED" stroke="#E8743B" stroke-width="2"/>
+  <text x="84" y="652" font-size="22" font-weight="700" fill="#C2410C">El orden importa</text>
+  <text x="84" y="688" font-size="18" fill="#1F2937">En naranja: cada paso nombra al paso anterior.</text>
+  <text x="84" y="716" font-size="18" fill="#1F2937">Si borras o cambias un paso, los que vienen</text>
+  <text x="84" y="744" font-size="18" fill="#1F2937">detrás pueden dejar de encontrar lo que buscan.</text>
+
+  <rect x="820" y="612" width="720" height="176" rx="14" fill="#F5F3FF" stroke="#7B61FF" stroke-width="2"/>
+  <text x="844" y="652" font-size="22" font-weight="700" fill="#5B21B6">Dónde ver el código</text>
+  <text x="844" y="688" font-size="18" fill="#1F2937">Barra de fórmulas: el paso seleccionado.</text>
+  <text x="844" y="716" font-size="18" fill="#1F2937">Inicio &gt; Editor avanzado: la consulta entera,</text>
+  <text x="844" y="744" font-size="18" fill="#1F2937">entre «let» (los pasos) e «in» (el resultado).</text>
+
+  <rect x="60" y="812" width="1480" height="56" rx="10" fill="#FEF3C7"/>
+  <text x="84" y="848" font-size="20" fill="#1F2937"><tspan font-weight="700">No hace falta escribir M.</tspan> Pero leerlo te dice qué hace cada paso y qué busca cuando da error.</text>
+</svg>

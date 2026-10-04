@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F2937"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">De tabla plana a estrella</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Power Query separa lo que ocurre (hechos) de lo que lo describe (dimensiones).</text>
+
+  <text x="60" y="180" font-size="21" font-weight="700" fill="#C2410C">TABLA PLANA · Ventas_Planas.xlsx</text>
+  <g font-size="16" fill="#1F2937">
+    <rect x="60" y="196" width="96" height="38" fill="#E5E7EB" stroke="#9CA3AF"/><text x="68" y="220" font-weight="700">Fecha</text>
+    <rect x="156" y="196" width="180" height="38" fill="#E5E7EB" stroke="#9CA3AF"/><text x="164" y="220" font-weight="700">Cliente</text>
+    <rect x="336" y="196" width="96" height="38" fill="#E5E7EB" stroke="#9CA3AF"/><text x="344" y="220" font-weight="700">Provincia</text>
+    <rect x="432" y="196" width="150" height="38" fill="#E5E7EB" stroke="#9CA3AF"/><text x="440" y="220" font-weight="700">Producto</text>
+    <rect x="582" y="196" width="96" height="38" fill="#E5E7EB" stroke="#9CA3AF"/><text x="590" y="220" font-weight="700">Familia</text>
+    <rect x="678" y="196" width="80" height="38" fill="#E5E7EB" stroke="#9CA3AF"/><text x="686" y="220" font-weight="700">Importe</text>
+  </g>
+  <g font-size="15" fill="#1F2937">
+    <rect x="60" y="234" width="96" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="68" y="256">04/01/24</text>
+    <rect x="156" y="234" width="180" height="34" fill="#FFEDD5" stroke="#D1D5DB"/><text x="164" y="256">Distribuidora Foral</text>
+    <rect x="336" y="234" width="96" height="34" fill="#FFEDD5" stroke="#D1D5DB"/><text x="344" y="256">Araba</text>
+    <rect x="432" y="234" width="150" height="34" fill="#EDE9FE" stroke="#D1D5DB"/><text x="440" y="256">Paté Ibérico</text>
+    <rect x="582" y="234" width="96" height="34" fill="#EDE9FE" stroke="#D1D5DB"/><text x="590" y="256">Conservas</text>
+    <rect x="678" y="234" width="80" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="686" y="256">472,32</text>
+
+    <rect x="60" y="268" width="96" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="68" y="290">04/01/24</text>
+    <rect x="156" y="268" width="180" height="34" fill="#FFEDD5" stroke="#D1D5DB"/><text x="164" y="290">Distribuidora Foral</text>
+    <rect x="336" y="268" width="96" height="34" fill="#FFEDD5" stroke="#D1D5DB"/><text x="344" y="290">Araba</text>
+    <rect x="432" y="268" width="150" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="440" y="290">Jamón Ibérico</text>
+    <rect x="582" y="268" width="96" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="590" y="290">Embutidos</text>
+    <rect x="678" y="268" width="80" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="686" y="290">273,94</text>
+
+    <rect x="60" y="302" width="96" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="68" y="324">04/01/24</text>
+    <rect x="156" y="302" width="180" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="164" y="324">Bar Pintxos Bilbo</text>
+    <rect x="336" y="302" width="96" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="344" y="324">Bizkaia</text>
+    <rect x="432" y="302" width="150" height="34" fill="#EDE9FE" stroke="#D1D5DB"/><text x="440" y="324">Paté Ibérico</text>
+    <rect x="582" y="302" width="96" height="34" fill="#EDE9FE" stroke="#D1D5DB"/><text x="590" y="324">Conservas</text>
+    <rect x="678" y="302" width="80" height="34" fill="#FFF" stroke="#D1D5DB"/><text x="686" y="324">39,06</text>
+
+    <rect x="60" y="336" width="698" height="34" fill="#F9FAFB" stroke="#D1D5DB"/><text x="409" y="358" text-anchor="middle" fill="#6B7280">... 500 filas, y los mismos nombres repetidos una y otra vez</text>
+  </g>
+  <g font-size="19" fill="#374151">
+    <text x="60" y="418">Funciona con 500 filas, pero:</text>
+    <text x="60" y="452">✗  Repite el mismo texto miles de veces</text>
+    <text x="60" y="486">✗  Si un cliente cambia de provincia, hay que</text>
+    <text x="88" y="512">corregir todas sus filas</text>
+    <text x="60" y="546">✗  Es difícil cruzarla con otra tabla de hechos,</text>
+    <text x="88" y="572">como el presupuesto</text>
+  </g>
+
+  <line x1="790" y1="420" x2="870" y2="420" stroke="#1F2937" stroke-width="4" marker-end="url(#arr)"/>
+  <text x="830" y="400" font-size="16" font-weight="700" text-anchor="middle" fill="#0E7C7B">Power</text>
+  <text x="830" y="452" font-size="16" font-weight="700" text-anchor="middle" fill="#0E7C7B">Query</text>
+
+  <text x="890" y="180" font-size="21" font-weight="700" fill="#0E7C7B">MODELO EN ESTRELLA</text>
+
+  <g stroke="#9CA3AF" stroke-width="3">
+    <line x1="1120" y1="290" x2="1210" y2="440"/>
+    <line x1="1440" y1="290" x2="1330" y2="440"/>
+    <line x1="1120" y1="680" x2="1210" y2="560"/>
+    <line x1="1440" y1="680" x2="1330" y2="560"/>
+  </g>
+
+  <rect x="1160" y="420" width="220" height="166" rx="10" fill="#E8743B" stroke="#C2410C" stroke-width="2"/>
+  <text x="1270" y="452" font-size="20" font-weight="700" text-anchor="middle" fill="#FFFFFF">FactVentas</text>
+  <g font-size="15" fill="#FFFFFF" text-anchor="middle">
+    <text x="1270" y="480">Fecha · CodCliente</text>
+    <text x="1270" y="502">CodProducto · Comercial</text>
+    <text x="1270" y="530" font-weight="700">Cantidad · Importe</text>
+    <text x="1270" y="552" font-weight="700">Coste</text>
+    <text x="1270" y="576" font-size="13">muchas filas, pocas columnas</text>
+  </g>
+
+  <g font-size="15" fill="#1F2937">
+    <rect x="900" y="200" width="250" height="110" rx="10" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2"/>
+    <text x="1025" y="230" font-size="18" font-weight="700" text-anchor="middle" fill="#0E7C7B">DimCliente</text>
+    <text x="1025" y="256" text-anchor="middle">CodCliente · Cliente · NIF</text>
+    <text x="1025" y="280" text-anchor="middle">Provincia · Segmento</text>
+
+    <rect x="1290" y="200" width="250" height="110" rx="10" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2"/>
+    <text x="1415" y="230" font-size="18" font-weight="700" text-anchor="middle" fill="#0E7C7B">DimProducto</text>
+    <text x="1415" y="256" text-anchor="middle">CodProducto · Producto</text>
+    <text x="1415" y="280" text-anchor="middle">Familia · Marca</text>
+
+    <rect x="900" y="660" width="250" height="110" rx="10" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2"/>
+    <text x="1025" y="690" font-size="18" font-weight="700" text-anchor="middle" fill="#0E7C7B">DimComercial</text>
+    <text x="1025" y="716" text-anchor="middle">Comercial</text>
+    <text x="1025" y="740" text-anchor="middle">ZonaComercial</text>
+
+    <rect x="1290" y="660" width="250" height="110" rx="10" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2"/>
+    <text x="1415" y="690" font-size="18" font-weight="700" text-anchor="middle" fill="#0E7C7B">DimFecha</text>
+    <text x="1415" y="716" text-anchor="middle">Fecha · Año · Mes</text>
+    <text x="1415" y="740" text-anchor="middle">Trimestre</text>
+  </g>
+
+  <rect x="60" y="806" width="1480" height="56" rx="10" fill="#FEF3C7"/>
+  <text x="84" y="842" font-size="20" fill="#1F2937"><tspan font-weight="700">Cada cliente y cada producto se escriben una sola vez,</tspan> en su dimensión. Los hechos solo guardan la clave y los números.</text>
+</svg>
