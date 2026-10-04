@@ -22,16 +22,19 @@ Material del alumno: [`../02_Power_Query.md`](../02_Power_Query.md)
 - **2.4.h** Agrupar por se plantea como paso intermedio, sobre una Referencia. Dejar claro que la tabla de hechos se carga con todo su detalle.
 - **2.5.b** La columna condicional no admite «Y» en una misma cláusula desde la interfaz; por eso se resuelve con el orden de las cláusulas.
 - **2.6.c** La trampa de los nombres de columna distintos (`Importe2024` / `Importe2025`) ya está en el Excel. Dejar que algunos anexen sin renombrar y lo descubran.
-- **2.7** Al terminar, guardar el .pbix como punto de control: `Proyecto Modelo de Ventas/Checkpoint_Cap2_PowerQuery.pbix`. Es el punto de partida del capítulo 3.
+- **2.7 Paso 3** El índice `IdProducto` debe añadirse justo después de Elegir columnas. El presupuesto (`Presupuesto_Ventas_2025.xlsx`) identifica los productos por su posición en la tabla Producto (1 = primera fila); si se añade tras combinar con familia, el orden puede cambiar y la clave deja de coincidir. Comprobado: idProducto del presupuesto = número de fila de Producto en el orden de la hoja (335 productos; 13 nombres solo coinciden tras recortar el espacio final, de ahí el paso Recortar).
+- **2.7 Paso 6** Ya no se crea una clave de albarán: `lineaAlbaran` se combina directamente con `albaran` por `idSAlb` + `idAlb`. Serie y número se quedan en la tabla de hechos (dimensión degenerada, sin nombrarlo así a los alumnos).
+- **2.7** Al terminar, los alumnos guardan `Mi_Modelo_Ventas.pbix`. Tú prepara además el punto de control `Proyecto Modelo de Ventas/Checkpoint_Cap2_PowerQuery.pbix` para quien no haya terminado: es el punto de partida del capítulo 3.
 
 ## Datos comprobados de BD_Ventas
 
-- 10.549 líneas, 2.063 albaranes (2 de enero de 2024 a 21 de octubre de 2025), 51 clientes (41 con ventas), 471 productos.
+- 10.549 líneas, 2.063 albaranes (2 de enero de 2024 a 21 de octubre de 2025), 51 clientes (41 con ventas), 471 productos (todos con alguna venta).
 - Clave del albarán: `idSAlb` + `idAlb`, sin duplicados. Seis series: BV24, BV25, MU24, MU25, RBV24, RBV25.
 - `referencia` es única en Producto y todas las líneas encuentran su producto.
-- 79 albaranes con `idRuta` = 0, inexistente en Rutas.
+- 79 albaranes con `idRuta` = 0, inexistente en Rutas (27 líneas, 766,07 €).
 - 2 productos con `idfamilia` = 0, inexistente en familia.
 - 57 líneas con importe negativo (17 en series RBV y 40 en el resto).
+- Ventas: 517.456,86 € en 2024 y 415.744,62 € en 2025 (hasta el 21/10).
 
 ## Pendiente de verificar en tu Power BI Desktop
 

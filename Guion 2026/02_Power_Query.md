@@ -412,9 +412,15 @@ Las consultas de origen no se cargarán al modelo; las de los grupos 2 y 3, sí.
 
 1. Clic derecho sobre `Producto` > **Referencia**. Renombra la nueva consulta `DimProducto` y muévela al grupo `2. Dimensiones`.
 2. **Inicio > Elegir columnas**: quédate con `referencia`, `descrip` e `idfamilia`. Producto tiene 470 columnas: elegir las que necesitas es el primer paso de casi cualquier consulta.
-3. **Inicio > Combinar consultas** con `familia`, por `idfamilia`, tipo **Externa izquierda**. Expande solo `descrip` y renómbrala `Familia`.
-4. Dos productos tienen `idfamilia` = 0 y no encuentran familia. Selecciona `Familia` > **Transformación > Reemplazar valores**: sustituye `null` por `Sin familia`.
-5. Renombra en lenguaje de negocio: `referencia` → `CodProducto`, `descrip` → `Producto`. Quita `idfamilia`.
+3. **Agregar columna > Columna de índice > Desde 1**. Renombra el índice como `IdProducto` y arrástralo a la primera posición.
+4. **Inicio > Combinar consultas** con `familia`, por `idfamilia`, tipo **Externa izquierda**. Expande solo `descrip` y renómbrala `Familia`.
+5. Dos productos tienen `idfamilia` = 0 y no encuentran familia. Selecciona `Familia` > **Transformación > Reemplazar valores**: sustituye `null` por `Sin familia`.
+6. Renombra en lenguaje de negocio: `referencia` → `CodProducto`, `descrip` → `Producto`. Quita `idfamilia`.
+7. Selecciona `Producto` > **Transformación > Formato > Recortar**: algunas descripciones acaban en un espacio que no se ve.
+
+> **Por qué un índice, si ya tenemos `referencia`.** En el capítulo 3 cargarás también el presupuesto de ventas, y ese archivo no identifica los productos por su referencia, sino por un número correlativo: el 1 es el primer producto de la tabla, el 2 el segundo, y así sucesivamente. La columna de índice reproduce exactamente esa numeración. Acabas de crear una **clave subrogada**: un número sin significado de negocio que identifica cada producto y que comparten las ventas y el presupuesto.
+>
+> Por eso el índice va **justo después de elegir columnas**, antes de combinar, ordenar o filtrar. Si lo añades después de un paso que cambie el orden de las filas, la numeración ya no coincidirá con la del presupuesto. Otra vez: el orden de los pasos importa.
 
 > Acabas de **aplanar** dos tablas en una. En el modelo no habrá una tabla de familias aparte: la familia es un atributo más del producto.
 
@@ -424,8 +430,8 @@ Las consultas de origen no se cargarán al modelo; las de los grupos 2 y 3, sí.
 2. **Elegir columnas:** `idCliente`, `nomCom`, `ciudad`, `idProvincia`, `idPais`.
 3. Combina con `provincia` (`idProvincia` con `id`) y expande `provincia`.
 4. Combina con `pais` (`idPais` con `idpais`) y expande `nombre`, renombrándola `Pais`.
-5. Quita las columnas de identificadores que ya no necesitas y renombra: `nomCom` → `Cliente`, `ciudad` → `Ciudad`, `provincia` → `Provincia`.
-6. Comprueba que no hay clientes repetidos: haz una **Referencia** de `DimCliente`, **Agrupar por** `idCliente` con **Recuento de filas**, y filtra los recuentos mayores que 1. No debe salir ninguno. Después elimina esta consulta de comprobación.
+5. Quita las columnas de identificadores que ya no necesitas y renombra: `idCliente` → `IdCliente`, `nomCom` → `Cliente`, `ciudad` → `Ciudad`, `provincia` → `Provincia`.
+6. Comprueba que no hay clientes repetidos: haz una **Referencia** de `DimCliente`, **Agrupar por** `IdCliente` con **Recuento de filas**, y filtra los recuentos mayores que 1. No debe salir ninguno. Después elimina esta consulta de comprobación.
 
 ### Paso 5 · DimRuta
 
@@ -434,32 +440,29 @@ Las consultas de origen no se cargarán al modelo; las de los grupos 2 y 3, sí.
 
 > Hay 79 albaranes con `idRuta` = 0, que no existe en la tabla de rutas: son ventas sin ruta asignada. Lo resolveremos en el modelo. Detectarlo ahora es parte del trabajo.
 
-### Paso 6 · Clave del albarán
+### Paso 6 · FactVentas
 
-Un albarán no se identifica por un solo campo, sino por dos: la serie (`idSAlb`, por ejemplo `BV25`) y el número (`idAlb`). Vamos a darle una clave única de una sola columna.
-
-1. Referencia de `albaran` > renómbrala `Albaranes` y déjala en `1. Origen`.
-2. **Agregar columna > Columna de índice > Desde 1**. Renombra el índice como `IdAlbaran`.
-
-Acabas de crear una **clave subrogada**: un número único por albarán que sustituye a la combinación serie y número.
-
-### Paso 7 · FactVentas
+Las líneas de albarán tienen el producto, la cantidad y el importe, pero no la fecha, el cliente ni la ruta: esos datos están en la cabecera del albarán. Un albarán no se identifica por un solo campo, sino por dos: la serie (`idSAlb`, por ejemplo `BV25`) y el número (`idAlb`).
 
 1. Referencia de `lineaAlbaran` > renómbrala `FactVentas` y muévela al grupo `3. Hechos`.
 2. **Elegir columnas:** `idSAlb`, `idAlb`, `referencia`, `cantidad`, `precio`, `total` y `totalCoste`.
-3. **Inicio > Combinar consultas** con `Albaranes`. Para combinar por dos columnas, haz clic en `idSAlb` y, con la tecla **Ctrl** pulsada, en `idAlb`, en las dos tablas y en el mismo orden. Tipo **Externa izquierda**.
-4. Expande `IdAlbaran`, `fechaAlb`, `idCliente` e `idRuta`.
-5. Quita `idSAlb` e `idAlb`: ya están representados por `IdAlbaran`.
-6. Revisa tipos: `fechaAlb` como **Fecha**; `cantidad` como número; `precio`, `total` y `totalCoste` como **Número decimal**; claves como **Número entero** salvo `referencia`, que es texto.
-7. Renombra: `referencia` → `CodProducto`, `fechaAlb` → `Fecha`, `total` → `Importe`, `totalCoste` → `Coste`, `cantidad` → `Cantidad`, `precio` → `Precio`, `idCliente` → `IdCliente`, `idRuta` → `IdRuta`.
+3. **Inicio > Combinar consultas** con `albaran`. Para combinar por dos columnas, haz clic en `idSAlb` y, con la tecla **Ctrl** pulsada, en `idAlb`, en las dos tablas y en el mismo orden. Tipo **Externa izquierda**.
+4. Expande `fechaAlb`, `idCliente` e `idRuta`.
+5. **Inicio > Combinar consultas** con `DimProducto`: `referencia` en `FactVentas` con `CodProducto` en `DimProducto`. Tipo **Externa izquierda**. Expande solo `IdProducto`.
+6. Quita `referencia`: el producto ya queda identificado por `IdProducto`.
+7. Revisa tipos: `fechaAlb` como **Fecha**; `cantidad` como número; `precio`, `total` y `totalCoste` como **Número decimal**; `IdProducto`, `idCliente` e `idRuta` como **Número entero**; `idSAlb` como texto.
+8. Renombra: `idSAlb` → `Serie`, `idAlb` → `NumAlbaran`, `fechaAlb` → `Fecha`, `total` → `Importe`, `totalCoste` → `Coste`, `cantidad` → `Cantidad`, `precio` → `Precio`, `idCliente` → `IdCliente`, `idRuta` → `IdRuta`.
+
+> `Serie` y `NumAlbaran` se quedan en la tabla de hechos sin una dimensión propia: no hay nada que describir de un albarán aparte de su número. Te servirán para contar albaranes o localizar uno concreto.
 
 > Algunas líneas tienen cantidades e importes negativos: devoluciones y abonos. Son hechos reales y se quedan en la tabla.
 
-### Paso 8 · Decidir qué se carga
+### Paso 7 · Decidir qué se carga
 
 1. Selecciona todas las consultas del grupo `1. Origen`, clic derecho y **desmarca Habilitar carga**. Aparecerán en cursiva: Power Query las usa, pero no llegan al modelo.
 2. **Inicio > Cerrar y aplicar**.
 3. En Desktop, comprueba en la **Vista de tabla** que tienes exactamente cuatro tablas: `FactVentas`, `DimCliente`, `DimProducto` y `DimRuta`.
+4. Guarda el archivo como `Proyecto Modelo de Ventas\Mi_Modelo_Ventas.pbix`. Lo retomarás en el capítulo 3.
 
 **Resultado:** una tabla de hechos estrecha y larga (más de 10.000 líneas, pocas columnas, casi todo números y claves) y tres dimensiones cortas y descriptivas. Es la materia prima del capítulo 3.
 
