@@ -8,8 +8,8 @@ Notas de sesión, tiempos y decisiones. No forma parte del entregable del alumno
 |---|---|---|---|
 | Auditoría del guion anterior | | `00_Auditoria.md` | Aprobado |
 | 1. Primeros pasos | `01_Arranque.md` | `01_Arranque_sesion.md` | Aprobado |
-| 2. Power Query | `02_Power_Query.md` | `02_Power_Query_sesion.md` | Aprobado |
-| 3. Modelado | | | Pendiente |
+| 2. Power Query | `02_Power_Query.md` | `02_Power_Query_sesion.md` | Aprobado (2.7 corregido: IdProducto) |
+| 3. Modelado | `03_Modelado.md` | `03_Modelado_sesion.md` | Aprobado |
 | 4. DAX | | | Pendiente |
 | 5. Visualización | | | Pendiente |
 | 6. Publicar e IA | | | Pendiente |
@@ -27,6 +27,6 @@ Notas de sesión, tiempos y decisiones. No forma parte del entregable del alumno
 
 - [ ] Confirmar con la Cámara que los equipos permiten escribir en `C:\` (plan B: `C:\Users\Public\`).
 - [ ] Cambiar el origen de datos de los .pbix del repo a `C:\Curso-Power-BI-Basico-main\...`.
-- [ ] Preparar los .pbix de punto de control (tras Power Query, tras modelado, tras medidas). El primero: `Proyecto Modelo de Ventas/Checkpoint_Cap2_PowerQuery.pbix`, al terminar el proyecto 2.7.
+- [ ] Preparar los .pbix de punto de control (tras Power Query, tras modelado, tras medidas). El primero: `Proyecto Modelo de Ventas/Checkpoint_Cap2_PowerQuery.pbix`, al terminar el proyecto 2.7. El segundo: `Checkpoint_Cap3_Modelo.pbix`, al terminar el capítulo 3.
 - [ ] Confirmar en Power BI Desktop (actualización de septiembre) el nombre y la ubicación de la vista de diagrama y la vista de esquema, y ajustar el apartado 2.2 y la infografía 08 si hace falta.
 - [ ] Revisar que los nombres de menús de los capítulos coinciden con la versión de Power BI Desktop instalada en la Cámara.

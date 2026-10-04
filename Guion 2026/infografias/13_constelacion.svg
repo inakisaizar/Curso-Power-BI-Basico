@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Dos hechos, las mismas dimensiones</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Ventas y presupuesto comparten cliente, producto y fecha. La ruta solo existe en las ventas.</text>
+
+  <g stroke="#6B7280" stroke-width="3">
+    <line x1="420" y1="330" x2="680" y2="215"/><line x1="420" y1="340" x2="680" y2="355"/><line x1="420" y1="350" x2="680" y2="495"/>
+    <line x1="1180" y1="330" x2="920" y2="215"/><line x1="1180" y1="340" x2="920" y2="355"/><line x1="1180" y1="350" x2="920" y2="495"/>
+    <line x1="240" y1="420" x2="240" y2="610"/>
+  </g>
+  <g font-size="20">
+    <rect x="680" y="170" width="240" height="90" rx="12" fill="#FFF7ED" stroke="#E8743B" stroke-width="2.5"/>
+    <text x="800" y="210" font-weight="700" fill="#C2410C" text-anchor="middle">DimCliente</text>
+    <text x="800" y="238" font-size="16" fill="#4B5563" text-anchor="middle">IdCliente</text>
+    <rect x="680" y="310" width="240" height="90" rx="12" fill="#FFF7ED" stroke="#E8743B" stroke-width="2.5"/>
+    <text x="800" y="350" font-weight="700" fill="#C2410C" text-anchor="middle">DimProducto</text>
+    <text x="800" y="378" font-size="16" fill="#4B5563" text-anchor="middle">IdProducto</text>
+    <rect x="680" y="450" width="240" height="90" rx="12" fill="#FFF7ED" stroke="#E8743B" stroke-width="2.5"/>
+    <text x="800" y="490" font-weight="700" fill="#C2410C" text-anchor="middle">DimFecha</text>
+    <text x="800" y="518" font-size="16" fill="#4B5563" text-anchor="middle">Fecha</text>
+    <rect x="120" y="610" width="240" height="90" rx="12" fill="#FFFFFF" stroke="#E8743B" stroke-width="2.5" stroke-dasharray="8 6"/>
+    <text x="240" y="650" font-weight="700" fill="#C2410C" text-anchor="middle">DimRuta</text>
+    <text x="240" y="678" font-size="16" fill="#4B5563" text-anchor="middle">solo en ventas</text>
+  </g>
+
+  <rect x="60" y="260" width="360" height="160" rx="14" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="3"/>
+  <text x="240" y="302" font-size="26" font-weight="700" fill="#0E7C7B" text-anchor="middle">FactVentas</text>
+  <text x="240" y="336" font-size="17" fill="#1F2937" text-anchor="middle">Una fila por línea de albarán</text>
+  <text x="240" y="364" font-size="17" fill="#1F2937" text-anchor="middle">Fecha: el día de la venta</text>
+  <text x="240" y="392" font-size="17" fill="#1F2937" text-anchor="middle">Medida: Ventas</text>
+
+  <rect x="1180" y="260" width="360" height="160" rx="14" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="3"/>
+  <text x="1360" y="302" font-size="26" font-weight="700" fill="#0E7C7B" text-anchor="middle">FactPresupuesto</text>
+  <text x="1360" y="336" font-size="17" fill="#1F2937" text-anchor="middle">Una fila por cliente, producto y mes</text>
+  <text x="1360" y="364" font-size="17" fill="#1F2937" text-anchor="middle">Fecha: último día del mes</text>
+  <text x="1360" y="392" font-size="17" fill="#1F2937" text-anchor="middle">Medida: Presupuesto</text>
+
+  <rect x="460" y="600" width="1080" height="130" rx="14" fill="#FFF7ED" stroke="#E8743B" stroke-width="2"/>
+  <text x="484" y="640" font-size="22" font-weight="700" fill="#C2410C">Dimensiones compartidas</text>
+  <text x="484" y="674" font-size="18" fill="#1F2937">Un mismo filtro (un cliente, una familia, un mes) llega a las dos tablas de hechos a la vez.</text>
+  <text x="484" y="702" font-size="18" fill="#1F2937">Por eso puedes poner Ventas y Presupuesto lado a lado en la misma matriz.</text>
+
+  <rect x="460" y="752" width="1080" height="98" rx="12" fill="#FEF3C7"/>
+  <text x="484" y="792" font-size="20" fill="#1F2937"><tspan font-weight="700">Cruza cada hecho solo por las dimensiones que tiene.</tspan></text>
+  <text x="484" y="826" font-size="18" fill="#1F2937">Presupuesto por ruta repite el total; compáralo por mes, trimestre o ejercicio, no por día.</text>
+</svg>
