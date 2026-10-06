@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9CA3AF"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">Del dato a la respuesta</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">El camino completo del curso. La IA y el informe consultan lo mismo: el modelo.</text>
+
+  <g font-size="20">
+    <rect x="60" y="200" width="230" height="150" rx="14" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="175" y="250" font-weight="700" fill="#1F2937" text-anchor="middle">Orígenes</text>
+    <text x="175" y="284" font-size="16" fill="#4B5563" text-anchor="middle">Excel, CSV, carpeta,</text>
+    <text x="175" y="306" font-size="16" fill="#4B5563" text-anchor="middle">web, ERP</text>
+
+    <rect x="340" y="200" width="230" height="150" rx="14" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2.5"/>
+    <text x="455" y="250" font-weight="700" fill="#0E7C7B" text-anchor="middle">Power Query</text>
+    <text x="455" y="284" font-size="16" fill="#4B5563" text-anchor="middle">Limpiar y construir</text>
+    <text x="455" y="306" font-size="16" fill="#4B5563" text-anchor="middle">hechos y dimensiones</text>
+
+    <rect x="620" y="170" width="360" height="210" rx="16" fill="#FFF7ED" stroke="#E8743B" stroke-width="3.5"/>
+    <text x="800" y="220" font-size="26" font-weight="700" fill="#C2410C" text-anchor="middle">Modelo semántico</text>
+    <text x="800" y="258" font-size="17" fill="#1F2937" text-anchor="middle">Tablas en estrella</text>
+    <text x="800" y="284" font-size="17" fill="#1F2937" text-anchor="middle">Relaciones y calendario</text>
+    <text x="800" y="310" font-size="17" fill="#1F2937" text-anchor="middle">Medidas DAX con descripción</text>
+    <text x="800" y="352" font-size="15" fill="#C2410C" text-anchor="middle" font-weight="700">Capítulos 3 y 4</text>
+  </g>
+  <g stroke="#9CA3AF" stroke-width="3" marker-end="url(#a)">
+    <line x1="292" y1="275" x2="334" y2="275"/>
+    <line x1="572" y1="275" x2="614" y2="275"/>
+    <line x1="984" y1="240" x2="1074" y2="205"/>
+    <line x1="984" y1="310" x2="1074" y2="345"/>
+  </g>
+
+  <g font-size="20">
+    <rect x="1080" y="140" width="300" height="130" rx="14" fill="#FFFBEB" stroke="#F2C811" stroke-width="2.5"/>
+    <text x="1230" y="190" font-weight="700" fill="#1F2937" text-anchor="middle">Informe</text>
+    <text x="1230" y="222" font-size="16" fill="#4B5563" text-anchor="middle">Páginas y gráficos</text>
+    <text x="1230" y="244" font-size="16" fill="#4B5563" text-anchor="middle">en Power BI</text>
+
+    <rect x="1080" y="290" width="300" height="130" rx="14" fill="#F5F3FF" stroke="#7B61FF" stroke-width="2.5"/>
+    <text x="1230" y="340" font-weight="700" fill="#5B21B6" text-anchor="middle">IA</text>
+    <text x="1230" y="372" font-size="16" fill="#4B5563" text-anchor="middle">Copilot, Claude u otros</text>
+    <text x="1230" y="394" font-size="16" fill="#4B5563" text-anchor="middle">asistentes conectados</text>
+  </g>
+
+  <rect x="60" y="460" width="1480" height="90" rx="14" fill="#EFF6FF" stroke="#0078D4" stroke-width="2"/>
+  <text x="84" y="500" font-size="20" font-weight="700" fill="#0078D4">Power BI Service</text>
+  <text x="84" y="530" font-size="18" fill="#1F2937">Publicar, compartir con licencia Pro y actualizar de forma automática (con puerta de enlace si los datos son locales).</text>
+
+  <rect x="60" y="590" width="1480" height="250" rx="14" fill="#FEF3C7"/>
+  <text x="84" y="636" font-size="24" font-weight="700" fill="#1F2937">El valor está en el modelo</text>
+  <g font-size="19" fill="#1F2937">
+    <text x="84" y="680">· Los gráficos se hacen en minutos y, cada vez más, los hará la IA.</text>
+    <text x="84" y="716">· La IA responde bien solo si el modelo es claro: nombres de negocio, relaciones correctas,</text>
+    <text x="104" y="744">claves ocultas y medidas con descripción.</text>
+    <text x="84" y="780">· Comprueba siempre las respuestas: ¿periodos equivalentes?, ¿la medida correcta?</text>
+  </g>
+</svg>
