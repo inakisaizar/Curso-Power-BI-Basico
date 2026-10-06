@@ -1,4 +1,4 @@
-# Capítulo 2 · Power Query · Notas del profesor (≈ 9 h)
+# Capítulo 2 · Power Query · Notas del profesor (≈ 8 h 45 min)
 
 Material del alumno: [`../02_Power_Query.md`](../02_Power_Query.md)
 
@@ -6,7 +6,7 @@ Material del alumno: [`../02_Power_Query.md`](../02_Power_Query.md)
 |---|---|---|
 | 2.1 | Para qué preparamos los datos | 45 min |
 | 2.2 | El Editor por dentro: áreas, pasos, código M, perfil de columnas, vistas de diagrama y esquema (4 ejercicios) | 1 h 15 min |
-| 2.3 | Orígenes: Carpeta + Web (INE) | 45 min |
+| 2.3 | Orígenes: Carpeta (ejercicio) + Web INE (demostración tuya) | 30 min |
 | 2.4 | Limpiar (8 ejercicios) | 2 h 15 min |
 | 2.5 | Crear columnas (4 ejercicios) | 1 h |
 | 2.6 | Combinar y anexar | 45 min |
@@ -18,7 +18,7 @@ Material del alumno: [`../02_Power_Query.md`](../02_Power_Query.md)
 - **2.1** Partir de la pregunta con la que acabó el capítulo 1 («¿cuántas veces aparece cada cliente?»). No entrar aún en relaciones ni cardinalidad: solo hechos frente a dimensiones.
 - **2.2** Insistir en Transformación (modifica) frente a Agregar columna (crea). Activar Calidad de columna desde el principio y que la dejen activada todo el curso. El código M se enseña para **leerlo**, no para escribirlo.
 - **2.2 Vistas de diagrama y esquema:** descritas según su funcionamiento en Power Query. Confirmar dónde aparecen y cómo se llaman en tu Power BI Desktop tras la actualización de septiembre, y ajustar el texto si hace falta.
-- **2.3** Si va justo de tiempo, la conexión al INE puede quedar como demostración tuya de 5 minutos. Demo opcional para el profesor: `Excel.Workbook(Web.Contents("https://raw.githubusercontent.com/..."), null, true)` en una consulta en blanco, para enseñar que se puede descargar un archivo de internet aunque el asistente Web no lo haga.
+- **2.3** La conexión al INE es una demostración tuya de unos 5 minutos (decisión para cuadrar las 20 h); los alumnos la tienen descrita para practicarla por su cuenta. Demo opcional: `Excel.Workbook(Web.Contents("https://raw.githubusercontent.com/..."), null, true)` en una consulta en blanco, para enseñar que se puede descargar un archivo de internet aunque el asistente Web no lo haga.
 - **2.4.h** Agrupar por se plantea como paso intermedio, sobre una Referencia. Dejar claro que la tabla de hechos se carga con todo su detalle.
 - **2.5.b** La columna condicional no admite «Y» en una misma cláusula desde la interfaz; por eso se resuelve con el orden de las cláusulas.
 - **2.6.c** La trampa de los nombres de columna distintos (`Importe2024` / `Importe2025`) ya está en el Excel. Dejar que algunos anexen sin renombrar y lo descubran.

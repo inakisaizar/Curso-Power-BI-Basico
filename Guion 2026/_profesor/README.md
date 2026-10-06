@@ -10,7 +10,7 @@ Notas de sesión, tiempos y decisiones. No forma parte del entregable del alumno
 | 1. Primeros pasos | `01_Arranque.md` | `01_Arranque_sesion.md` | Aprobado |
 | 2. Power Query | `02_Power_Query.md` | `02_Power_Query_sesion.md` | Aprobado (2.7 corregido: IdProducto) |
 | 3. Modelado | `03_Modelado.md` | `03_Modelado_sesion.md` | Aprobado |
-| 4. DAX | | | Pendiente |
+| 4. DAX | | | Estructura aprobada |
 | 5. Visualización | | | Pendiente |
 | 6. Publicar e IA | | | Pendiente |
 
@@ -22,6 +22,8 @@ Notas de sesión, tiempos y decisiones. No forma parte del entregable del alumno
 - **Separación:** el material del alumno en `Guion 2026/`; lo del profesor en `Guion 2026/_profesor/`.
 - **Excel del repo:** se mantienen sin modificar los que usa el curso. Eliminados por no usarse: Transponer (1.6), Parámetros (bloque 4) y mini proyecto (bloque 5). Nuevo: `Ejercicios Power Query/PQ Carpeta/Ventas_2024/` (12 CSV generados a partir de `Ventas_Planas.xlsx`).
 - **Nombre de la pestaña:** en la versión en castellano es **Transformación**.
+- **Horas (20 h):** cap. 1, 3 h; cap. 2, 8 h 45 min (INE como demostración); cap. 3, 4 h 10 min; cap. 4, 2 h 40 min; caps. 5 y 6, 1 h 25 min.
+- **DimFecha sin columnas Offset:** dependen de TODAY() y, con datos hasta octubre de 2025, saldrían vacías y confunden.
 
 ## Pendiente antes del curso
 
