@@ -17,5 +17,5 @@ Todos los ejercicios usan archivos de este repositorio, guardados en la **misma 
 2. [Power Query: preparar los datos](02_Power_Query.md)
 3. [Modelado: el modelo en estrella](03_Modelado.md)
 4. [Medidas con DAX](04_DAX.md)
-5. Visualización *(próximamente)*
-6. Publicar, compartir y el papel de la IA *(próximamente)*
+5. [Visualización](05_Visualizacion.md)
+6. [Publicar, compartir y el papel de la IA](06_Publicar_IA.md)

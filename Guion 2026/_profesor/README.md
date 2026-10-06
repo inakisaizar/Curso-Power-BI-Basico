@@ -11,8 +11,8 @@ Notas de sesión, tiempos y decisiones. No forma parte del entregable del alumno
 | 2. Power Query | `02_Power_Query.md` | `02_Power_Query_sesion.md` | Aprobado (2.7 corregido: IdProducto) |
 | 3. Modelado | `03_Modelado.md` | `03_Modelado_sesion.md` | Aprobado |
 | 4. DAX | `04_DAX.md` | `04_DAX_sesion.md` | Aprobado |
-| 5. Visualización | | | Pendiente |
-| 6. Publicar e IA | | | Pendiente |
+| 5. Visualización | `05_Visualizacion.md` | `05_Visualizacion_sesion.md` | Aprobado |
+| 6. Publicar e IA | `06_Publicar_IA.md` | `06_Publicar_IA_sesion.md` | Aprobado |
 
 ## Decisiones tomadas
 
@@ -31,4 +31,5 @@ Notas de sesión, tiempos y decisiones. No forma parte del entregable del alumno
 - [ ] Cambiar el origen de datos de los .pbix del repo a `C:\Curso-Power-BI-Basico-main\...`.
 - [ ] Preparar los .pbix de punto de control (tras Power Query, tras modelado, tras medidas). El primero: `Proyecto Modelo de Ventas/Checkpoint_Cap2_PowerQuery.pbix`, al terminar el proyecto 2.7. El segundo: `Checkpoint_Cap3_Modelo.pbix`, al terminar el capítulo 3. El tercero: `Checkpoint_Cap4_DAX.pbix`, al terminar el capítulo 4.
 - [ ] Confirmar en Power BI Desktop (actualización de septiembre) el nombre y la ubicación de la vista de diagrama y la vista de esquema, y ajustar el apartado 2.2 y la infografía 08 si hace falta.
+- [ ] Ensayar la demostración del capítulo 6 (Claude conectado al modelo) y revisar los requisitos de licencia de Copilot vigentes.
 - [ ] Revisar que los nombres de menús de los capítulos coinciden con la versión de Power BI Desktop instalada en la Cámara.
