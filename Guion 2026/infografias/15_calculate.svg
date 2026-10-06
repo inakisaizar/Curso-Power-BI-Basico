@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7B61FF"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="60" y="78" font-size="46" font-weight="700" fill="#1F2937">CALCULATE cambia el filtro</text>
+  <text x="60" y="118" font-size="22" fill="#4B5563">Toma los filtros de la celda, los modifica y después calcula la medida.</text>
+
+  <g font-size="20" font-weight="700">
+    <text x="60" y="190" fill="#C2410C">FILTROS DE LA CELDA</text>
+    <text x="590" y="190" fill="#5B21B6">LO QUE HACE CALCULATE</text>
+    <text x="1120" y="190" fill="#0E7C7B">FILTROS CON LOS QUE CALCULA</text>
+  </g>
+
+  <rect x="60" y="210" width="460" height="130" rx="12" fill="#FFF7ED" stroke="#E8743B" stroke-width="2"/>
+  <g font-size="18" fill="#1F2937"><text x="84" y="256">Familia = CONSERVAS MAR</text><text x="84" y="294">Ejercicio = 2025</text></g>
+  <rect x="590" y="210" width="460" height="130" rx="12" fill="#F5F3FF" stroke="#7B61FF" stroke-width="2"/>
+  <text x="614" y="250" font-size="19" font-weight="700" fill="#5B21B6">Sustituye un filtro</text>
+  <text x="614" y="290" font-size="16" fill="#1F2937" font-family="Consolas, Courier New, monospace">CALCULATE ( [Ventas],</text>
+  <text x="614" y="314" font-size="16" fill="#1F2937" font-family="Consolas, Courier New, monospace">  DimProducto[Familia] = "CERVEBEL" )</text>
+  <rect x="1120" y="210" width="420" height="130" rx="12" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2"/>
+  <g font-size="18" fill="#1F2937"><text x="1144" y="256"><tspan font-weight="700">Familia = CERVEBEL</tspan></text><text x="1144" y="294">Ejercicio = 2025</text></g>
+  <line x1="524" y1="275" x2="582" y2="275" stroke="#7B61FF" stroke-width="4" marker-end="url(#a)"/>
+  <line x1="1054" y1="275" x2="1112" y2="275" stroke="#7B61FF" stroke-width="4" marker-end="url(#a)"/>
+
+  <rect x="60" y="370" width="460" height="130" rx="12" fill="#FFF7ED" stroke="#E8743B" stroke-width="2"/>
+  <g font-size="18" fill="#1F2937"><text x="84" y="416">Familia = CONSERVAS MAR</text><text x="84" y="454">Ejercicio = 2025</text></g>
+  <rect x="590" y="370" width="460" height="130" rx="12" fill="#F5F3FF" stroke="#7B61FF" stroke-width="2"/>
+  <text x="614" y="410" font-size="19" font-weight="700" fill="#5B21B6">Quita los filtros de una tabla</text>
+  <text x="614" y="450" font-size="16" fill="#1F2937" font-family="Consolas, Courier New, monospace">CALCULATE ( [Ventas],</text>
+  <text x="614" y="474" font-size="16" fill="#1F2937" font-family="Consolas, Courier New, monospace">  ALL ( DimProducto ) )</text>
+  <rect x="1120" y="370" width="420" height="130" rx="12" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2"/>
+  <g font-size="18" fill="#1F2937"><text x="1144" y="416" fill="#9CA3AF"><tspan text-decoration="line-through">Familia = CONSERVAS MAR</tspan></text><text x="1144" y="454">Ejercicio = 2025</text></g>
+  <line x1="524" y1="435" x2="582" y2="435" stroke="#7B61FF" stroke-width="4" marker-end="url(#a)"/>
+  <line x1="1054" y1="435" x2="1112" y2="435" stroke="#7B61FF" stroke-width="4" marker-end="url(#a)"/>
+
+  <rect x="60" y="530" width="460" height="130" rx="12" fill="#FFF7ED" stroke="#E8743B" stroke-width="2"/>
+  <g font-size="18" fill="#1F2937"><text x="84" y="576">Mes = marzo de 2025</text></g>
+  <rect x="590" y="530" width="460" height="130" rx="12" fill="#F5F3FF" stroke="#7B61FF" stroke-width="2"/>
+  <text x="614" y="570" font-size="19" font-weight="700" fill="#5B21B6">Desplaza las fechas</text>
+  <text x="614" y="610" font-size="16" fill="#1F2937" font-family="Consolas, Courier New, monospace">CALCULATE ( [Ventas],</text>
+  <text x="614" y="634" font-size="16" fill="#1F2937" font-family="Consolas, Courier New, monospace">  SAMEPERIODLASTYEAR ( DimFecha[Fecha] ) )</text>
+  <rect x="1120" y="530" width="420" height="130" rx="12" fill="#F1FAF9" stroke="#0E7C7B" stroke-width="2"/>
+  <g font-size="18" fill="#1F2937"><text x="1144" y="576"><tspan font-weight="700">Mes = marzo de 2024</tspan></text></g>
+  <line x1="524" y1="595" x2="582" y2="595" stroke="#7B61FF" stroke-width="4" marker-end="url(#a)"/>
+  <line x1="1054" y1="595" x2="1112" y2="595" stroke="#7B61FF" stroke-width="4" marker-end="url(#a)"/>
+
+  <rect x="60" y="700" width="1480" height="140" rx="12" fill="#FEF3C7"/>
+  <text x="84" y="744" font-size="21" font-weight="700" fill="#1F2937">Los filtros que CALCULATE no toca se mantienen.</text>
+  <text x="84" y="782" font-size="19" fill="#1F2937">En los tres casos, el resto de filtros de la celda (otras dimensiones, segmentaciones, página) siguen aplicándose.</text>
+  <text x="84" y="816" font-size="19" fill="#1F2937">Por eso Ventas AA, Ventas Cervebel o % sobre total responden también a la segmentación de Ejercicio.</text>
+</svg>
