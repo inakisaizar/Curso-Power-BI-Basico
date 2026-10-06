@@ -180,7 +180,9 @@ Power BI se conecta a cientos de orígenes, pero en una empresa casi siempre apa
 
 > En el panel **Consultas** aparecerán consultas auxiliares que Power Query crea para combinar (archivo de ejemplo, función de transformación). No las borres.
 
-### Ejercicio 2.3.b · Leer una tabla de una página web
+### Demostración 2.3.b · Leer una tabla de una página web
+
+Lo verás en clase como demostración. Si quieres practicarlo después por tu cuenta:
 
 1. **Inicio > Obtener datos > Web** y pega la dirección de la página del Índice de Precios de Consumo en la sección de prensa del INE (ine.es).
 2. En el Navegador, elige la tabla que contiene la serie mensual y pulsa **Transformar datos**.
