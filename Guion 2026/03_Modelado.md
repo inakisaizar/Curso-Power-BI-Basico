@@ -178,7 +178,6 @@ Por eso, en el apartado 3.2, desactivaste **Fecha y hora automáticas**: esa opc
    VAR _AnyoFechaFin    = YEAR ( MAX ( FactVentas[Fecha] ) )
    VAR Base =
        CALENDAR ( DATE ( _AnyoFechaInicio, 1, 1 ), DATE ( _AnyoFechaFin, 12, 31 ) )
-   VAR _HoyPrimerDiaMes = DATE ( YEAR ( TODAY () ), MONTH ( TODAY () ), 1 )
    RETURN
    ADDCOLUMNS (
        SELECTCOLUMNS ( Base, "Fecha", [Date] ),
@@ -188,14 +187,11 @@ Por eso, en el apartado 3.2, desactivaste **Fecha y hora automáticas**: esa opc
        "Mes nombre",    FORMAT ( [Fecha], "mmmm" ),
        "Trimestre",     "Q" & QUARTER ( [Fecha] ),
        "Ejercicio Mes", FORMAT ( [Fecha], "yyyy-MM" ),
-       "Semana nº",     WEEKNUM ( [Fecha], 21 ),
-       "Días Offset",   DATEDIFF ( TODAY (), [Fecha], DAY ),
-       "Mes Offset",
-           DATEDIFF ( _HoyPrimerDiaMes, DATE ( YEAR ( [Fecha] ), MONTH ( [Fecha] ), 1 ), MONTH )
+       "Semana nº",     WEEKNUM ( [Fecha], 21 )
    )
    ```
 
-   No hace falta que entiendas cada línea todavía. Lo importante: toma el primer y el último año de las ventas, crea todos los días desde el 1 de enero del primero hasta el 31 de diciembre del último, y añade una columna por cada forma de agrupar el tiempo. Las dos columnas **Offset** cuentan la distancia a hoy (0 es este mes, -1 el anterior) y sirven para filtros como «últimos 12 meses».
+   No hace falta que entiendas cada línea todavía. Lo importante: toma el primer y el último año de las ventas, crea todos los días desde el 1 de enero del primero hasta el 31 de diciembre del último, y añade una columna por cada forma de agrupar el tiempo.
 
 2. Comprueba en la Vista de tabla que `DimFecha` va del 1 de enero de 2024 al 31 de diciembre de 2025: 731 filas.
 
