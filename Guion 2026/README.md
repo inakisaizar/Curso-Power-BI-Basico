@@ -16,6 +16,6 @@ Todos los ejercicios usan archivos de este repositorio, guardados en la **misma 
 1. [Primeros pasos con Power BI](01_Arranque.md)
 2. [Power Query: preparar los datos](02_Power_Query.md)
 3. [Modelado: el modelo en estrella](03_Modelado.md)
-4. Medidas con DAX *(próximamente)*
+4. [Medidas con DAX](04_DAX.md)
 5. Visualización *(próximamente)*
 6. Publicar, compartir y el papel de la IA *(próximamente)*
